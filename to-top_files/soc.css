@@ -1,0 +1,183 @@
+.socnew .bx-sm-feature-select .bx-sm-parent .bx-sm-header {background: none!important;}
+.socnew .bx-sm-feature-select .bx-sm-parent {background: none!important;}
+.bx-sm-feature-noselect .bx-sm-parent, .bx-sm-feature-noselect .bx-sm-parent-button {background: none!important;}
+.bx-sm-feature-noselect .bx-sm-parent .bx-sm-header, .bx-sm-feature-noselect .bx-sm-parent-button .bx-sm-header-button {background: none!important;}
+
+.socnew {}
+
+.socnew .im_1 table, .socnew .im_2 table, .socnew .im_3 table, .socnew .im_4 table, .socnew .im_5 table, .socnew .im_6 table {width: 100%;} 
+
+.socnew .bx-sm-feature-select a {font-family: PTSans;font-size: 16px;color:  #282828!important;font-weight: 700;}
+.socnew .bx-sm-feature-noselect a {font-family: PTSans;font-size: 16px;color:  #282828!important; font-weight: 400;}
+
+.socnew_non #ddmenuaddholder {display: none;}
+.socnew_non #bx_sm_settings {display: none;}
+.socnew_non .bx-sm-rightshadow {display: none;}
+.socnew_non .bx-sm-rightline {display: none;}
+.socnew_non .bx-sm-separator {background: none!important;}
+
+.socnew .im_1 {
+
+
+    background: url('/bitrix/templates/babytoday/img/socseti/b_bg1.png') no-repeat!important;
+    width: 130px;
+    height: 42px;
+}
+
+.socnew .im_1 a {    
+	padding-left: 10px!important;
+    padding-right: 10px!important;
+}
+
+.socnew .im_2 {
+background: url('/bitrix/templates/babytoday/img/socseti/b_bg2.png') no-repeat!important;
+
+    width: 130px;
+    height: 42px;
+}
+.socnew .im_3 {
+background: url('/bitrix/templates/babytoday/img/socseti/b_bg3.png') no-repeat!important;
+
+	width: 130px;
+	height: 42px;
+}
+.socnew .im_4 {
+background: url('/bitrix/templates/babytoday/img/socseti/b_bg4.png') no-repeat!important;
+
+width: 130px;
+height: 42px;
+}
+.socnew .im_5 {
+	background: url('/bitrix/templates/babytoday/img/socseti/b_bg5.png') no-repeat!important;
+	width: 130px;
+	height: 42px;
+}
+.socnew .im_6 {
+background: url('/bitrix/templates/babytoday/img/socseti/b_bg1.png') no-repeat!important;
+	width: 130px;
+	height: 42px;
+
+}
+
+.socnew .im_7 {
+	background: url('/bitrix/templates/babytoday/img/socseti/b_bg3.png') no-repeat!important;
+	width: 130px;
+	height: 42px;
+
+}
+
+
+
+
+
+
+
+
+
+
+.soclenta {
+	
+    margin: 0 auto;
+    float1: left;
+}
+
+.soclenta .microblog-top-tabs-visible {
+    padding-top: 15px;
+    background-color: #f2f2f2;
+    width: 938px;
+    height: 30px;
+    position: relative;
+    margin-left: 10px;
+}
+
+.microblog-top-tabs-visible {
+    padding-top: 15px;
+    background-color: #f2f2f2;
+    width: 938px;
+    height: 30px;
+    position: relative;
+    margin-left: 10px;
+} 
+
+.microblog-top-tabs-visible .feed-filter-btn-wrap  {margin-right: 20px;}
+
+.soclenta .feed-add-post-form-variants {padding: 0 0 12px 15px;background-color: #f2f2f2;}
+
+.feed-add-post-form-variants {
+	border-bottom: 1px solid #f0f1f2;
+    min-height: 19px;
+    padding: 0 0 12px 15px!important;
+    position: relative;
+    background-color: #f2f2f2;
+}
+
+
+.soclenta .microblog-top-tabs-visible .feed-add-post-form-message-link-icon {background: url('/bitrix/templates/babytoday/img/socseti/message.png') no-repeat!important;}
+
+.soclenta .microblog-top-tabs-visible .feed-add-post-form-polls-link-icon {background: url('/bitrix/templates/babytoday/img/socseti/opros.png') no-repeat!important;}
+
+.soclenta .microblog-top-tabs-visible .feed-add-post-form-important-link-icon {background: url('/bitrix/templates/babytoday/img/socseti/vajno.png') no-repeat!important;}
+
+.soclenta #sonet_log_microblog_container .feed-filter-btn:before {
+	background: url('/bitrix/templates/babytoday/img/socseti/str_spisok.png') no-repeat!important;right: 10px;
+    top: 8px!important;
+    width: 10px!important;
+    height: 10px!important;
+}
+
+.soclenta .microblog-top-tabs-visible .feed-filter-btn-wrap {
+	position: absolute;
+    right: 10px;
+    top: -5px;
+} 
+
+.soclenta #sonet_log_microblog_container .feed-add-post-form-link {
+	font-family: PTSans;
+	color:  #717171;
+	font-size: 14px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+}
+
+.feed-new-message-informer-place {
+	background: #ffffff!important;
+}
+
+#bx_incl_area_3_1_1 {
+
+}
+
+.socnew_non {
+	margin-bottom: 10px;
+}
+
+.feed-user-avatar.feed-user-avatar-white {
+	border-radius: 0px!important;
+	width: 97px!important;
+	height: 97px!important;
+}
+
+.feed-user-avatar.feed-user-avatar-white>img {
+	width: 97px!important;
+	height: 97px!important;
+}
+
+.feed-user-avatar {
+	border-radius: 0px!important;
+	width: 97px!important;
+	height: 97px!important;
+}
+
+.feed-user-avatar img {
+	width: 97px!important;
+	height: 97px!important;
+}
+
+.feed-post-cont-wrap {
+	    padding: 16px 18px 0 130px!important;
+}
+
+.razdel_soc_set .bx-ilike-right-wrap .bx-ilike-right {
+	background: url(/bitrix/templates/babytoday/img/socseti/like_soc.png) no-repeat;
+    background-position: 0px 0px!important;
+    background-size: 13px;
+}

@@ -1,0 +1,6897 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	
+	}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+
+a {
+	color: #355BC8;
+}
+
+
+
+
+
+@font-face {
+    font-family: "SegoeUIRegular";
+    src: url("/bitrix/templates/babytoday/fonts/SegoeUIRegular/SegoeUIRegular.eot");
+    src: url("/bitrix/templates/babytoday/fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),
+    url("/bitrix/templates/babytoday/fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"),
+    url("/bitrix/templates/babytoday/fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "SegoeUIBold"; */
+@font-face {
+    font-family: "SegoeUIBold";
+    src: url("/bitrix/templates/babytoday/fonts/SegoeUIBold/SegoeUIBold.eot");
+    src: url("/bitrix/templates/babytoday/fonts/SegoeUIBold/SegoeUIBold.eot?#iefix")format("embedded-opentype"),
+    url("/bitrix/templates/babytoday/fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"),
+    url("/bitrix/templates/babytoday/fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "SegoeUIItalic"; */
+@font-face {
+    font-family: "SegoeUIItalic";
+    src: url("/bitrix/templates/babytoday/fonts/SegoeUIItalic/SegoeUIItalic.eot");
+    src: url("/bitrix/templates/babytoday/fonts/SegoeUIItalic/SegoeUIItalic.eot?#iefix")format("embedded-opentype"),
+    url("/bitrix/templates/babytoday/fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"),
+    url("/bitrix/templates/babytoday/fonts/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "SegoeUILight"; */
+@font-face {
+    font-family: "SegoeUILight";
+    src: url("/bitrix/templates/babytoday/fonts/SegoeUILight/SegoeUILight.eot");
+    src: url("/bitrix/templates/babytoday/fonts/SegoeUILight/SegoeUILight.eot?#iefix")format("embedded-opentype"),
+    url("/bitrix/templates/babytoday/fonts/SegoeUILight/SegoeUILight.woff") format("woff"),
+    url("/bitrix/templates/babytoday/fonts/SegoeUILight/SegoeUILight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "SegoeUISemiBold"; */
+@font-face {
+    font-family: "SegoeUISemiBold";
+    src: url("/bitrix/templates/babytoday/fonts/SegoeUISemiBold/SegoeUISemiBold.eot");
+    src: url("/bitrix/templates/babytoday/fonts/SegoeUISemiBold/SegoeUISemiBold.eot?#iefix")format("embedded-opentype"),
+    url("/bitrix/templates/babytoday/fonts/SegoeUISemiBold/SegoeUISemiBold.woff") format("woff"),
+    url("/bitrix/templates/babytoday/fonts/SegoeUISemiBold/SegoeUISemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "Museo Cyrl"; */
+@font-face {
+	font-family: 'Museo Cyrl';
+    src: local('/bitrix/templates/babytoday/fonts/Museocyrl-500/Museo Cyrl 500'), 
+		local('/bitrix/templates/babytoday/fonts/Museocyrl-500/MuseoCyrl-500'), 
+		url('/bitrix/templates/babytoday/fonts/Museocyrl-500/Museocyrl500.woff2') format('woff2'), 
+		url('/bitrix/templates/babytoday/fonts/Museocyrl-500/Museocyrl500.woff') format('woff'), 
+		url('/bitrix/templates/babytoday/fonts/Museocyrl-500/Museocyrl500.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+body {
+	/*background: url('/bitrix/templates/babytoday/img/backgr.png');*/
+	font-family: 'Tahoma';
+}
+body.ny2017 {background: url('/bitrix/templates/babytoday/img/backgr-ny.png');}
+* {font-family: 'PT Sans', sans-serif;}
+
+.bg-top{display:none;}
+body.ny2017 .bg-top{
+    display: block;
+    background: url(/bitrix/templates/babytoday/img/backgr-top-ny.png) 10px 0px #fff;
+    height: 32px;
+    width: 100%;
+    margin-bottom: -15PX;
+}
+
+.wrapper {
+	overflow: hidden;
+}
+
+#header	{
+	width: 1200px;
+	margin: 0 auto;
+	background: #ffffff;
+}
+
+#header .top_ots {
+	width: 1200px;
+	height: 15px;
+}
+
+#header .banners {
+	border-width: 1px;
+	border-color:  #888888;
+	border-style: solid;
+	background-color:  #888888;
+	opacity: 0.7;
+	width: 1198px;
+	height: 118px;
+	margin-top: 11px;
+	display:none;
+}
+
+#header .header_info {
+	width: 1200px;
+	padding-bottom: 16px;
+	background: #fff;
+}
+
+#header .header_info .logo {
+	float: left;
+	margin-left: 41px;
+}
+
+#header .header_info .contacts_header .phone {
+	background: url('/bitrix/templates/babytoday/img/phone_ico.png');
+	background-repeat: no-repeat;
+	float: left;
+	margin: 19px 0px 0px 70px;
+	    width: 365px;
+}
+
+.contacts_header .phone span {
+	font-family: 'Tahoma';
+	color:  #3e3e3e;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: left;
+	margin-left: 22px;
+}
+
+.banner_helpbaby-xs {display: none;}
+
+.contacts_header .phone .p1 {
+	margin-left: 21px;
+	color: green;
+	font-size: 18px;
+}
+.contacts_header .phone .p2 {margin-left: 11px;}
+
+.cl {clear: both;}
+
+.contacts_header .email {
+	    float: left;
+    	width: 230px;
+    	background: url('/bitrix/templates/babytoday/img/email_ico.png') 0px 3px;
+		background-repeat: no-repeat;
+		    margin: 41px 0px 0px 50px;
+}
+
+.banner_helpbaby { width: 186px;z-index: 0;display: block;box-sizing: border-box;border-width: 1px;border-color: #888888;border-style: solid; }
+
+.contacts_header .email span {
+	color: #3e3e3e;
+	margin-left: 25px;
+}
+
+.contacts_header span.email-label {
+	margin-left: 0;
+} 
+
+.contacts_header .email span a {
+	color: #3e3e3e;
+	text-decoration: none;
+}
+
+.contacts_header .social {
+	float: left;
+	width: 55px;
+	height: 26px;
+	margin: 38px 0 0 0px;	
+}
+
+
+.contacts_header .social a {display: inline-block;}
+
+.contacts_header .social a img {}
+
+.header_info .right_block {
+	float: right;
+	height: 95px;
+	width: 251px;
+	box-sizing: border-box;
+	padding: 26px 0px;
+}
+
+.header_info .right_block .vhod_klub {
+	border-radius: 6px;
+	border-width: 1px;
+	border-color:  #085acc;
+	border-style: solid;
+	width: 249px;
+	height: 30px;
+	margin-top: 8px;
+	background: #ffffff url('/bitrix/templates/babytoday/img/vhod_club_str.png') 196px;
+	background-repeat: no-repeat;
+}
+
+.header_info .right_block .vhod_klub a {
+	color: rgb(8, 90, 204);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    text-decoration: none;
+    margin: 0 0 0 52px;
+}
+
+.header_info .right_block .seach_block {
+	border-width: 1px;
+	border-color:  #c8c8c8;
+	border-style: solid;
+	background-color:  #ffffff;
+	width: 250px;
+	height: 29px;
+	margin: 2px 0 0 0;
+	}
+.header_info .right_block .seach_block input {
+    width: 205px;
+    height: 29px;
+    border: none;
+    padding: 0 0 0 12px;
+    float: left;
+}
+
+.header_info .right_block .seach_block input[type="text"] {
+	border-radius: 0;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.header_info .right_block .seach_block input[type="submit"] {
+	cursor: pointer;
+}
+
+
+.header_info .right_block .seach_block .ico_seach {
+	width: 25px;
+	height: 25px;
+	background: url('/bitrix/templates/babytoday/img/lupa_seach.png');
+	margin-top: 5px;
+	position: relative;
+	z-index: 2;
+}
+
+.block_menu {
+	/* height: 137px; */
+	height: 35px;
+	width: 1200px;
+}
+
+.block_menu .item {
+	width: 171px;
+	/* height: 137px; */
+	height: 35px;
+	float: left;
+	cursor: pointer;
+}
+.cvet {
+	width: 171px;
+	/* height: 137px; */
+	height: 35px;
+	position: relative;
+	transition: all ease 0.2s;
+}
+
+.st_t_m {
+	background: url('/bitrix/templates/babytoday/img/st_top_m.png') no-repeat;
+	background-position: 100px 0px;
+	/* margin-top: 125px; */
+	margin-top: 35px;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 10px;
+    display: none;
+}
+
+.st_t_m_2 {
+	background: url('/bitrix/templates/babytoday/img/st_top_m.png') no-repeat;
+	background-position: 100px 0px;
+	margin-top: 0px;
+    position: absolute;
+
+    z-index: 999;
+    width: 100%;
+    height: 10px;
+    display: none;
+}
+
+.top_menu ul li ul {
+    display: none;
+    margin-top: 5px;
+    position: absolute;
+    width: 250px;
+    border-radius: 5px;
+    text-align: left;
+    box-shadow: 0.1px 0.1px 0.1px 0.1px;
+    left: 0px;
+    z-index: 999;
+    padding: 5px 0px 5px 0px;
+    background: #ffffff;
+}
+
+.top_menu ul li ul li {width: 100%;}
+
+
+.top_menu ul li:hover>.st_t_m_2 {display: block;}
+.top_menu ul li:hover>.st_t_m_2>ul {display: block;}
+
+.cvet ul {
+	display: none;
+	margin-top: 5px;
+    position: absolute;
+    width: 250px;
+    
+    border-radius: 5px;
+    text-align: left;
+    /*box-shadow: 0.1px 0.1px 0.1px 0.1px;*/ /*не существует 0.1px, ненадо так делать*/
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,.3);
+    left: 0px;
+    z-index: 999;
+    padding: 5px 0px 5px 0px;
+    background: #ffffff;
+    /*  */    
+}
+
+.cvet ul li {
+	height: 40px;
+}
+
+.cvet ul li:hover {
+	background-color:  rgba(102, 146, 212, 0.7);
+}
+.cvet ul li:hover a{
+	color:#ffffff;
+}
+
+
+.cvet.pl ul li:hover {background-color:  rgba(102, 146, 212, 0.7);}
+.cvet.br ul li:hover {background-color:  rgba(227, 30, 36, 0.71);}
+.cvet.uh ul li:hover {background-color:  rgba(255, 204, 0, 0.85);}
+.cvet.ob ul li:hover {background-color:  rgba(0, 143, 69, 0.68);}
+
+.cvet.sm ul li:hover {background-color:  rgba(102, 146, 212, 0.7);}
+.cvet.sem ul li:hover {background-color:  rgba(227, 30, 36, 0.71);}
+.cvet.odt ul li:hover {background-color:  rgba(255, 204, 0, 0.85);}   
+
+.cvet ul li a {
+
+	color:  #3e3e3e;
+	font-size: 14px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 400;
+	line-height: 16px;
+	text-decoration: none;
+	padding: 10px;
+    display: block;
+
+}
+
+.cvet:hover >.st_t_m > ul {
+	display: block;
+}
+.cvet:hover >.st_t_m {display: block;}
+
+
+.menu_top_razdel {display1: none;margin: 10px 10px 10px 15px;}
+
+.menu_top_razdel ul{}
+
+.menu_top_razdel li {background-color: rgba(102, 146, 212, 0.7);height: 30px;display: inline-block;width: auto;text-align: center;margin-top: 10px;min-width: 175px;}
+
+
+
+.menu_top_razdel.cmt_b li {background-color: rgba(227, 30, 36, 0.71);}
+.menu_top_razdel.cmt_u li {background-color: rgba(255, 204, 0, 0.85);}
+.menu_top_razdel.cmt_o li {background-color: rgba(0, 143, 69, 0.68);}
+.menu_top_razdel.cmt_s li {background-color: rgba(102, 146, 212, 0.7);}
+.menu_top_razdel.cmt_so li {background-color: rgba(227, 30, 36, 0.71);}
+.menu_top_razdel.cmt_or li {background-color: rgba(0, 143, 69, 0.68);}
+
+
+
+
+.menu_top_razdel li a {color:#ffffff;text-decoration: none;vertical-align: middle;padding: 7px 10px;display: block;}
+
+.block_menu .planirovanie:hover .cvet{
+	background: rgba(8, 90, 204, 0.59);
+}
+.block_menu .beremenost:hover .cvet{
+	background-color:  rgba(227, 30, 36, 0.58);
+}
+.block_menu .rodi:hover .cvet{
+	background-color:  rgba(255, 204, 0, 0.58);
+}
+.block_menu .obrazov:hover .cvet{
+	background-color:  rgba(0, 143, 69, 0.79);
+}
+.block_menu .zdovor:hover .cvet{
+	background-color:  rgba(8, 90, 204, 0.59);
+}
+.block_menu .famaly:hover .cvet{
+	background-color:  rgba(227, 30, 36, 0.58);
+}
+.block_menu .otdich:hover .cvet{
+	background-color:  rgba(255, 204, 0, 0.58);
+}
+
+
+
+.block_menu .planirovanie {
+	background: url('/bitrix/templates/babytoday/img/planirovanie_m.png');
+}
+.block_menu .beremenost {
+	background: url('/bitrix/templates/babytoday/img/beremenost_m.png');
+}
+.block_menu .rodi {
+	background: url('/bitrix/templates/babytoday/img/rodi_m.png');
+}
+.block_menu .obrazov
+{
+	background: url('/bitrix/templates/babytoday/img/obrazov_m.png');
+}
+.block_menu .zdovor {
+	background: url('/bitrix/templates/babytoday/img/zdovor_m.png');
+}
+.block_menu .famaly {
+	background: url('/bitrix/templates/babytoday/img/famaly_m.png');
+}
+.block_menu .otdich {
+	background: url('/bitrix/templates/babytoday/img/otdich_m.png');
+}
+
+
+#footer .block_menu .planirovanie {
+	background: none;
+}
+#footer .block_menu .beremenost {
+	background: none;
+}
+#footer .block_menu .rodi {
+	background: none;
+}
+#footer .block_menu .obrazov
+{
+	background: none;
+}
+#footer .block_menu .zdovor {
+	background: none;
+}
+#footer .block_menu .famaly {
+	background: none;
+}
+#footer .block_menu .otdich {
+	background: none;
+}
+
+#footer .block_menu {
+	height: 35px;
+}
+
+#footer .block_menu .item {
+	height: 35px;
+}
+
+#footer .cvet {
+	height: 35px;
+}
+
+.kat_name {
+	width: 171px;
+	height: 35px;
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	transition: all ease 0.2s;
+}
+.kat_name p {
+	color: #ffffff;
+	margin-top: 10px;
+	font-size: 14px;
+	text-shadow: 0px 0px 1px #000, 0px 0px 1px #000;
+}
+
+.block_menu .planirovanie .kat_name {background:  rgba(8, 90, 204, 1);}
+.block_menu .beremenost .kat_name {background:  rgba(227, 30, 36, 1);}
+.block_menu .rodi .kat_name {background:  rgba(255, 204, 0, 1);}
+.block_menu .obrazov .kat_name {background:  rgba(0, 143, 69, 1);}
+.block_menu .zdovor .kat_name {background:  rgba(8, 90, 204, 1);}
+.block_menu .famaly .kat_name {background:  rgba(227, 30, 36, 1);}
+.block_menu .otdich .kat_name {background:  rgba(255, 204, 0, 1);}
+
+.block_menu *:hover .kat_name {/*background: none;*/}
+
+.top_menu {
+	margin-bottom: 22px;
+	font-size: 0;
+}
+
+.top_menu:after {
+	content: '';
+	clear: both;
+	display: table;
+	table-layout: fixed;
+}
+
+.top_menu ul {
+	float: right;
+	padding: 21px 44px 0 44px;
+}
+
+.top_menu ul li {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 13px;
+	margin-right: 60px;
+}
+
+.top_menu ul li:last-child {
+	margin-right: 0;
+}
+
+.top_menu ul li a {
+	text-decoration: none;
+	color:  #000;
+    display: block;
+}
+
+.top_menu ul li a:hover {
+	text-decoration: underline;
+}
+
+.top_menu .forum {
+	position: relative;
+	padding-left: 27px;
+}
+
+.top_menu .forum:before {
+	content: '';
+	position: absolute;
+	top: -3px; left: 1px;
+	width: 20px;
+	height: 18px;
+	background-image: url('/bitrix/templates/babytoday/img/forum-icon.png');
+}
+
+.header_info:after {
+	content: '';
+	clear: both;
+	display: table;
+	table-layout: fixed;
+}
+
+.header_info .logo img {
+	max-width: 352px;
+	height: auto;
+}
+
+.header_right {
+	float: right;
+	padding-top: 8px;
+	padding-right: 44px;
+}
+
+.header_calendar {
+	float: left;
+	position: relative;
+	padding-left: 42px;
+	margin-top: 1px;
+    line-height: 1.3;
+    color: #000;
+    margin-right: 40px;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+.header_calendar:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+.header_calendar:before {
+	content: '';
+	position: absolute;
+	top: 0; left: 0;
+	width: 30px;
+	height: 30px;
+	background-image: url('/bitrix/templates/babytoday/img/calendar-icon.png');
+	background-repeat: no-repeat;
+}
+
+.header_search {
+	float: left;
+	position: relative;
+	width: 300px;
+	margin-right: 41px;
+}
+
+.header_search input[type="text"] {
+	display: block;
+	width: 100%;
+	border: 1px solid #c8c8c8;
+	border-radius: 0;
+	padding: 6px 37px 6px 14px;
+	font-size: 13px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.header_search .ico_seach {
+	position: absolute;
+	top: 8px; right: 11px;
+	padding: 0;
+	background-color: transparent;
+	border: 0;
+	border-radius: 0;
+	background-image: url('/bitrix/templates/babytoday/img/search-icon.png');
+	background-repeat: no-repeat;
+	width: 17px;
+	height: 17px;
+	cursor: pointer;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.header_email {
+	float: left;
+	margin-right: 41px;
+    padding-top: 6px;
+}
+
+.header_email a {
+	font-size: 13px;
+	color: #3354c9;
+	text-decoration: none;
+}
+
+.header_email_icon {
+	display: inline-block;
+	margin-right: 5px;
+	background-image: url('/bitrix/templates/babytoday/img/email-icon.png');
+	background-repeat: no-repeat;
+	width: 12px;
+	height: 9px;
+}
+
+.header_socials {
+	float: left;
+	padding-top: 2px;
+	font-size: 0;
+}
+
+.header_socials a,
+.header_socials a:hover {
+	text-decoration: none;
+}
+
+.header_socials a {
+	display: inline-block;
+	margin-right: 4px;
+}
+
+.header_socials a:last-child {
+	margin-right: 0;
+}
+
+#wrap {
+	background: #ffffff;
+	padding-bottom: 1px;
+	min-height: 775px;
+	width: 1200px;
+    margin: 0 auto;
+}
+
+#wrap #center {
+	float: left;
+	margin-top: 19px;
+	width: 1004px;
+}
+
+#wrap #center h1 {
+	margin-bottom: 20px;
+	color:  #3e3e3e;
+	font-size: 24px;
+	font-weight: 400;
+	text-align: center;	
+	box-sizing: border-box;
+}
+
+#wrap #center h1:not(.h1_s) {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 19px;
+}
+
+#wrap #center .h1_s {
+	background-color:  rgba(228, 228, 228, 0.39);
+	width: 100%;
+	min-height: 30px;
+	color:  #345AC7;
+	font-size: 24px;
+	font-weight: 400;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 10px;
+	padding-top: 5px;
+}
+
+#wrap #center .news {
+	margin-top: 15px;
+}
+
+#wrap #center .news_pol {
+	width: 420px;
+	height: 406px;
+	float: left;
+	position: relative;
+	margin-left: 15px;
+}
+
+#wrap #center .news_pol .info {
+	background-color:  rgba(255, 255, 255, 0.7);
+	position: absolute;
+	bottom: 0px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#wrap #center .news_pol .title {
+	font-family: 'SegoeUI';
+	color:  #282828;
+	font-size: 17px;
+	font-weight: 600;
+	text-align: left;
+	margin: 8px 12px 10px 0px;
+	line-height: 20px;
+}
+
+#wrap #center .news_pol .bigfoto {
+	width: 473px;
+	height: 288px;
+	margin-left: 7px;
+}
+
+#wrap #center .news_pol:hover1 {
+    opacity: 0.5;
+}
+
+#wrap #center .news_pol .smallfoto {
+	margin-top: 31px;
+    margin-left: 7px;
+    float: left;
+}
+
+#wrap #center .news_pol .anons {
+	font-family: 'Segoe UI';
+	color:  #282828;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: left;
+    padding: 0px 0px 50px 0px;
+    line-height: 18px;
+}
+
+#wrap #center .news_pol .podrobno {
+	position: absolute;
+	background-color:  #c32429;
+	width: 179px;
+	height: 34px;
+	bottom: 14px;
+    right: 11px;
+}
+
+#wrap #center .news_pol .podrobno a {
+    color:  #ffffff;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+    padding: 8px 10px 10px 10px;
+}
+
+#wrap #center .news_item {
+
+	width: 568px;
+	height: 203px;
+	float: left;
+	position: relative;
+}
+
+#wrap #center .news_item .info {
+	width: 264px;
+	background-color:  rgba(255, 255, 255, 0.7);
+	position: relative;
+	height: 100%;
+	    padding: 0px 10px 0px 10px;
+}
+
+#center .news_item .video {
+	float: left;
+	width: 234px;
+	height: 131px;
+	margin-left: 8px;
+	margin-top: 5px;
+}
+
+#center .news_item .photo {
+	float: left;
+	width: 234px;
+	height: 131px;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+#center .news_item .photo:hover {
+    opacity: 0.5;
+}
+
+#center .news_item .anons {
+	font-family: 'Segoe UI';
+    color: #282828;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    padding: 0px 0px 50px 0px;
+    line-height: 18px;
+}
+
+#center .news_item .photo img {
+	width: 234px;
+}
+
+#center .news_item .title {
+	font-family: 'SegoeUI';
+    color: #282828;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    margin: 0px 12px 10px 0px;
+    line-height: 20px;
+    padding-top: 10px;
+}
+
+#center .news_item .podrobnee {
+    position: absolute;
+    background-color: #c32429;
+    width: 179px;
+    height: 34px;
+    bottom: 14px;
+    right: 11px;
+}
+
+#center .news_item .podrobnee a{
+	color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 8px 10px 10px 10px;
+}
+#center .news_item .podrobnee a:hover {
+	text-decoration1: underline;
+}
+
+#wrap #right {
+	float: right;
+	margin-left: 10px;
+	margin-top: 19px;
+}
+
+#wrap #right .baner_right{
+	box-sizing: border-box;
+	border-width: 1px;
+	border-color:  #888888;
+	border-style: solid;
+	background-color:  #888888;
+	width: 186px;
+}
+
+#ecperts {
+	margin-top: 11px;
+	background: #ffffff;
+    background-color: #ffffff;
+    max-width: 1004px;
+}
+
+#ecperts h1 {
+	font-family: 'SegoeUI';
+	color:  #282828;
+	font-size: 22px;
+	font-weight: 600;
+	text-align: left;
+	margin: 20px 0 20px 20px;
+}
+
+#ecperts .bx-wrapper {
+	margin:0 auto;
+}
+
+#ecperts .bx-wrapper .bx-viewport {
+	border:none;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+}
+
+#ecperts .bx-default-pager {
+	display: none;
+}
+
+#ecperts .bx-wrapper .bx-prev {
+	left: initial;
+}
+
+#ecperts .bx-prev {
+	background:url('/bitrix/templates/babytoday/img/exp_lef.png');
+	background-repeat: no-repeat;
+	top: -5%;
+	height: 75px;
+    width: 50px;
+    opacity: 0.5;
+    right: 20px;
+}
+#ecperts .bx-prev:hover {opacity: 1;}
+
+#ecperts .bx-next {
+	background:url('/bitrix/templates/babytoday/img/exp_righ.png');
+	background-repeat: no-repeat;
+	right: -16px;
+	top: -5%;
+	height: 75px;
+    width: 50px;
+    opacity: 0.5;
+}
+#ecperts .bx-next:hover {opacity: 1;}
+
+
+.ecpert {
+
+} 
+
+.ecpert .foto {
+	border-radius: 50%;
+	border-width: 1px;
+	border-color:  #c8c8c8;
+	border-style: solid;
+	background-color:  #ededed;
+	width: 160px;
+	height: 160px;
+	margin: 0 auto;
+}
+
+.ecpert .name {
+	font-family: 'Segoe UI';
+	color:  #282828;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: left;
+	margin-top: 25px;
+	line-height: 20px;
+	min-height: 40px;
+}
+
+.ecpert .description {
+	font-family: 'Segoe UI';
+	color:  #979797;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: left;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	line-height: 15px;
+}
+
+.ecpert .rating {
+	margin:0 auto;
+	margin-bottom: 20px;
+	    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.spec_pred {
+	float: left;
+	width: 825px;
+	height: 358px;
+	border: 1px solid #c8c8c8;
+	margin-top: 24px;
+}
+
+.spec_pred h1 {
+    color: #3e3e3e;
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+.spec_pred .item {
+	width: 257px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 15px;
+	position: relative;
+	min-height: 257px;
+}
+
+.spec_pred .item .img {
+	width: 257px;
+	height: 116px;
+}
+.spec_pred .item .title {
+	/* */
+	color:  #3e3e3e;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+	text-indent: 20px;
+	text-transform: uppercase;
+    margin-top: 18px;
+}
+.spec_pred .item .descriptions {
+	/* */
+	color:  #3e3e3e;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: justify;
+	text-indent: 20px;
+	    margin-top: 20px;
+	width: 257px;    
+}
+
+.spec_pred .item a {
+	/* */
+	color:  #085acc;
+	font-size: 10px;
+	font-weight: 400;
+	text-align: left;
+	text-indent: 20px;
+	display: block;
+	text-decoration: none;
+	float: right;
+    margin-top: 20px;
+}
+.spec_pred .item a:hover {text-decoration: underline;}
+
+
+.soc_opros {
+	width: 100%;
+	max-width: 365px;
+	min-height: 358px;
+	float: left;
+	border: 1px solid #c8c8c8;
+	margin-top: 24px;
+	color:  #3e3e3e;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+	background: url('/bitrix/templates/babytoday/img/soc_bg.png');
+	}
+
+.soc_opros h1{
+	/* */
+	color:  #3e3e3e;
+	font-size: 24px;
+	font-weight: 400;
+	text-align: left;
+	text-indent: 20px;
+	text-indent: 13px;
+    margin-top: 21px;
+}
+
+.soc_opros form {
+	
+	margin-top: 5px;
+}
+
+.soc_opros .vopros_text{
+    font-family: 'Segoe UI';
+	color:  #ffffff;
+	font-size: 18px;
+	font-style: italic;
+	text-align: left;
+	margin-top: 20px;
+
+
+    margin-left: 20px;
+    line-height: 18.6px;
+
+}
+
+input[type="checkbox"] {
+	margin-left: 20px;
+    position: absolute;
+    left: -9999px;
+}
+input[type="checkbox"] + label {
+	margin-left: 20px;
+    background: url('/bitrix/templates/babytoday/img/checkbox-sprite2.jpg') 0 0 no-repeat;
+    padding-left: 20px;
+}
+input[type="checkbox"]:checked + label {
+	margin-left: 20px;
+    background-position: 0 -22px;
+    height: 25px;
+    display: block;
+    padding-top: 5px;
+}
+
+.soc_opros textarea {
+	margin-left: 13px;
+	border-width: 1px;
+	border-color:  #c8c8c8;
+	border-style: solid;
+	width: 337px;
+	height: 63px;
+} 
+
+.soc_opros .blue_submit {
+	background-color:  #c32429;
+	width: 179px;
+	height: 34px;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+	margin-top: 2px;
+    float: left;
+    margin-left: 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 35px;
+    -webkit-appearance: none;
+	appearance: none;
+	border-radius: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#partner {
+	border-width: 1px;
+	border-color:  #c8c8c8;
+	border-style: solid;
+	width: 1198px;
+	height: 213px;
+	margin-top: 11px;
+}
+
+#partner h1 {
+	color:  #3e3e3e;
+	font-size: 24px;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 26px;
+}
+
+#partner .bx-wrapper {
+	margin:0 auto;
+	    margin-top: 20px;
+
+}
+
+#partner .bx-wrapper .bx-viewport {
+	border:none;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+}
+
+#partner .bx-default-pager {
+	display: none;
+}
+
+
+#partner .bx-prev {
+	background:url('/bitrix/templates/babytoday/img/str_left.png');
+	background-repeat: no-repeat;
+	left: -100px;
+	top: 25%;
+	height: 75px;
+    width: 50px;
+    opacity: 0.5;
+}
+#partner .bx-prev:hover {opacity: 1;}
+
+#partner .bx-next {
+	background:url('/bitrix/templates/babytoday/img/str_right.png');
+	background-repeat: no-repeat;
+	right: -100px;
+	top: 25%;
+	height: 75px;
+    width: 50px;
+    opacity: 0.5;
+}
+#partner .bx-next:hover {opacity: 1;}
+
+
+#partner .logotip {
+
+}
+
+
+
+#footer {
+	background-color: #ffffff;
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+#footer .bottom_ots {
+	background-color: #ffffff;
+    height: 20px;
+}
+
+#footer .main{
+	
+	width: 1200px;
+}
+
+#footer .main .footer_logo-container {
+	float: left;
+    margin: 17px 0 0 22px;
+}
+
+#footer .main .footer_logo img {
+	width: 264px;
+	height: auto;
+}
+
+
+#footer .menu_footer {
+	float: left;
+	/*margin-left: 45px;*/
+	margin-top: 11px;
+
+}
+#footer .menu_footer ul {
+
+}
+
+#footer .menu_footer ul li{
+	float: left;
+	margin-left: 25px;
+	margin-left: 30px;
+}
+#footer .menu_footer ul li a {
+	text-decoration: none;
+	font-family: Arial;
+	color:  #085acc;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: left;
+}
+
+#footer .social_footer {
+	float: left;
+	color:  #1a1a1a;
+	font-weight: 400;
+	line-height: 28px;
+	text-align: left;
+	margin-left: 30px;
+    margin-top: 8px;
+   	font-family: Arial;
+	font-size: 14px;
+}
+
+#footer .social_footer a {display: inline-block;}
+
+#footer .contakts {
+	width: 410px;
+	color:  #1a1a1a;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 20px;
+	text-align: left;
+	float: left;
+	/*margin-left: 90px;*/
+	margin-left: 30px;
+	margin-top: 20px;
+	font-family: Arial;
+	font-size: 14px;
+}
+
+#footer .contakts a {
+	text-decoration: none;
+	color: #1a1a1a;
+		font-family: Arial;
+	font-size: 14px;
+}
+
+#footer .copy {
+	float: left;
+	color:  #1a1a1a;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	text-align: left;
+	font-family: Arial;
+}
+
+#footer .maps_site {
+	float: left;
+	margin-left: 23px;
+}
+#footer .maps_site a {
+	color:  #1a1a1a;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	text-align: left;
+	font-family: Arial;
+}
+#footer .maps_site a:hover {text-decoration: underline;}
+
+
+
+
+
+
+/* ПЛАНИРОВАНИЕ */
+.planirovanie-list {
+
+}
+
+.planirovanie-list a.zag_razdela {
+	background-color: rgba(228, 228, 228, 0.39);
+    width: 100%;
+    height: 30px;
+    /* */
+    color: #3e3e3e;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    text-indent: 20px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    display: block;
+}
+
+.planirovanie-item-p img {
+	margin: 0px 10px 10px 0px;
+}
+
+.planirovanie-item-p {
+	border-width: 1px;
+	border-color:  #c8c8c8;
+	border-style: solid;
+	background-color:  #ffffff;
+	width: 735px;
+	height: 439px;
+	float: left;
+	padding: 5px;
+	position: relative;
+	margin-right: 5px;
+
+}
+
+.planirovanie-item-p .name {
+	/* */
+	color:  #3e3e3e;
+	font-size: 24px;
+	font-weight: 400;
+	text-align: left;
+	text-indent: 20px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	display: block;
+	text-decoration: none;
+}
+
+.planirovanie-item-p .anons {
+	/* */
+	color:  #3e3e3e;
+	font-size: 15px;
+	font-weight: 400;
+	text-align: justify;
+	text-indent: 20px;
+}
+
+.planirovanie-item-p .data {
+	/* */
+	color:  #505050;
+	font-size: 12px;
+	font-weight: 400;
+	text-align: justify;
+	width: 260px;
+    float: left;
+}
+
+.planirovanie-item-p .rating {
+	float: left;
+	
+	/* */
+    color: #505050;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: justify;
+    text-indent1: 20px;
+    width: 260px;
+    float: left;
+
+}
+.planirovanie-item-p .podrobnee {
+	position: absolute;
+    background-color: #e31e24;
+    width: 179px;
+    height: 34px;
+    bottom: 14px;
+    right: 11px;
+}
+
+.planirovanie-item-p .podrobnee a {
+	color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 6px 10px 10px 10px;
+}
+
+.planirovanie-item {
+	float: left;
+	border-width: 1px;
+	border-color:  #c8c8c8;
+	border-style: solid;
+	background-color:  #ffffff;
+	width: 235px;
+	height: 234px;
+	padding: 5px;
+	position: relative;
+	margin-right: 3px;
+	margin-bottom: 3px;
+}
+
+.planirovanie-item .bx_catalog_item_controls {
+	display: none;
+}
+
+.planirovanie-item a {
+	/* */
+	color:  #355BC8;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: left;
+	text-decoration: none;
+	display: block;
+
+}
+
+.planirovanie-item .podrobnee {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+}
+
+.planirovanie-item .img {
+	float:left; 
+	height: 145px; 
+	/* width: 235px; */
+	width: 100%;
+	background-repeat: no-repeat!important;
+	background-position: top center!important;
+	background-size: cover!important;
+}
+
+.planirovanie-item .podrobnee a{
+	/* */
+color:  #085acc;
+font-size: 10px;
+font-weight: 400;
+text-align: right;
+text-indent: 20px;
+font-size: 13px;
+}
+
+.planirovanie-item .rating {
+	float: left;
+	
+	/* */
+    color: #505050;
+    font-size: 11px;
+    font-weight: 400;
+    text-align: justify;
+    text-indent1: 20px;
+    width: 260px;
+    float: left;
+    margin:10px 0px;
+    /*margin-top: 15px;
+    /*position: absolute;
+    bottom: 20px;*/
+
+}
+
+ .rating div.star-empty {
+background-image: url('/bitrix/templates/babytoday/img/serdechko.png');
+background-repeat: no-repeat;
+    width: 16px;
+    margin-right: 1px;
+    height: 16px;
+}
+
+
+ .rating div.star-voted {
+background-image: url('/bitrix/templates/babytoday/img/serdechko1.png');
+background-repeat: no-repeat;
+    width: 16px;
+    margin-right: 1px;
+    height: 16px;
+}
+
+.rating div.star-over {
+	background-image: url('/bitrix/templates/babytoday/img/serdechko2.png');
+	background-repeat: no-repeat;
+    width: 16px;
+    margin-right: 1px;
+    height: 16px;
+}
+
+
+.planirovanie-detail {
+	border-width: 1px;
+    border-color: #c8c8c8;
+    border-style: solid;
+    background-color: #ffffff;
+    width: 994px;
+    padding: 5px;
+}
+
+.planirovanie-detail .name {
+    /* */
+    color: #3e3e3e;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    text-indent: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.planirovanie-detail .img {
+    margin: 0px 10px 10px 15px;
+    width: 377px;
+    height: 280px;
+    background-repeat: no-repeat!important;
+	background-position: top center!important;
+	background-size: cover!important;
+}
+
+.planirovanie-detail .text, .yur-sov-item .text  {
+    /* */
+    color: #3e3e3e;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: justify;
+    text-indent: 20px;
+
+}
+
+.planirovanie-detail .data {
+     
+    color: #505050;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: justify;
+    width: 270px;
+    float: left;
+}
+
+.planirovanie-detail .rating {
+	float: left;
+	
+	 
+    color: #505050;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: justify;
+    width: 270px;
+    float: left;
+    margin-top1: 15px;
+
+}
+
+.planirovanie-detail .foto {
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+/* /ПЛАНИРОВАНИЕ */
+
+
+/* СПЕЦПРЕДЛОЖЕНИЯ РАЗДЕЛ*/
+.specpled-list {
+	border-width: 1px;
+    border-color: #c8c8c8;
+    border-style: solid;
+    background-color: #ffffff;
+    padding: 5px;
+    width: 994px;
+}
+
+.specpled-item {
+	margin-bottom: 70px;
+	position: relative;
+}
+
+.specpled-item img {
+	width: 490px;
+	margin-right: 10px;
+
+	border-width: 1px;
+    border-color: #c8c8c8;
+    border-style: solid;
+}
+
+ 
+.specpled-item .podrobnee {
+    position: absolute;
+    background-color: #e31e24;
+    width: 179px;
+    height: 34px;
+    bottom: 14px;
+    right: 11px;
+}
+
+.specpled-item .podrobnee a {
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 6px 10px 10px 10px;
+}
+
+.specpled-item a.title {
+	color: #085acc;
+	 
+	font-size: 24px;
+	font-weight: 400;
+	text-decoration:none;
+	line-height: 30px;
+	
+}
+
+.specpled-item a.title:hover {
+	text-decoration: underline;
+}
+
+.specpled-item .anons {
+	text-indent: 20px;
+	margin-top: 30px;
+}
+
+
+
+
+.specpled-detail {
+	border-width: 1px;
+    border-color: #c8c8c8;
+    border-style: solid;
+    background-color: #ffffff;
+    padding: 5px;
+    width: 994px;
+}
+
+.specpled-detail img {
+	width: 490px;
+	margin-right: 10px;
+
+	border-width: 1px;
+    border-color: #c8c8c8;
+    border-style: solid;
+    float: left;
+}
+
+.specpled-detail .name {
+     
+    color: #3e3e3e;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    text-indent: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: block;
+    text-decoration: none;
+}
+
+/* /СПЕЦПРЕДЛОЖЕНИЯ РАЗДЕЛ*/
+
+
+
+/* Интернет магазины*/
+
+.magazine-list {
+	border-width: 1px;
+    border-color: #c8c8c8;
+    border-style: solid;
+    background-color: #ffffff;
+    padding: 5px;
+    width: 994px;
+}
+
+.magazine-item {
+	margin-bottom: 30px;
+}
+
+.magazine-item img {
+	margin-right: 10px;
+	max-width: 430px;
+}
+
+.magazine-item a.title {
+	 
+	color:  #085acc;
+	font-size: 24px;
+	font-weight: 700;
+	text-align: justify;
+	text-decoration: none;
+	    display: block;
+	    margin-bottom: 10px;
+
+}
+
+.magazine-item .anons a{
+	color:#085acc;
+
+}
+
+.magazine-item a.title:hover {
+	text-decoration: underline;
+}
+
+/* /Интернет магазины */
+
+
+
+
+/* Женская консультация */
+.jenskaya-konsultaciya-list {
+	    border-width: 1px;
+    border-color: #c8c8c8;
+    border-style: solid;
+    background-color: #ffffff;
+    width: 994px;
+    padding: 10px;
+}
+
+.jenskaya-konsultaciya-list-item {
+	min-height: 150px;
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+}
+
+.jenskaya-konsultaciya-list-item .img {
+	display: block;
+	float: left;
+	width: 500px;
+	height: 150px;
+	background-position: top center!important;
+}
+
+.jenskaya-konsultaciya-list-item .item-block-right {
+	float: left;
+	margin-left: 10px;
+	width: 460px;
+	position: relative;
+}
+
+.jenskaya-konsultaciya-list-item .item_title {
+	margin-bottom: 15px;
+}
+.jenskaya-konsultaciya-list-item .item_title a {
+	 
+	color:  #3e3e3e;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: left;
+}
+
+.jenskaya-konsultaciya-list-item .item_articul {
+	 
+	color:  #3e3e3e;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: left;
+}
+
+.jenskaya-konsultaciya-list-item .podrobnee {
+	background-color:  #e31e24;
+	width: 179px;
+	height: 34px;
+	position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+}
+
+.jenskaya-konsultaciya-list-item .podrobnee a {
+	 
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+	display: block;
+	    padding: 8px 10px;
+	
+}
+
+
+
+
+
+
+
+.jenskaya-konsultaciya-list-item .rating, .jenskaya-konsultaciya-item .rating {
+	width: 180px;
+    height: 22px;
+   
+    margin-bottom: 20px;
+    padding-left: 20px;
+    right: 180px;
+}
+
+.jenskaya-konsultaciya-list-item .rating .vote-result, .jenskaya-konsultaciya-item .rating .vote-result {
+	display: none;
+}
+
+.jenskaya-konsultaciya-list-item .rating div.star-empty, .jenskaya-konsultaciya-item .rating div.star-empty {
+    background-image: url('/bitrix/templates/babytoday/img/rat0.png');
+    background-repeat: no-repeat;
+    width: 21px;
+    margin-right: 1px;
+    height: 20px;
+}
+
+.jenskaya-konsultaciya-list-item .rating div.star-over, .jenskaya-konsultaciya-item .rating div.star-over {
+    background-image: url('/bitrix/templates/babytoday/img/rat1.png');
+    background-repeat: no-repeat;
+    width: 21px;
+    margin-right: 1px;
+    height: 20px;
+}
+
+.jenskaya-konsultaciya-list-item .rating div.star-voted, .jenskaya-konsultaciya-item .rating div.star-voted {
+    background-image: url('/bitrix/templates/babytoday/img/rat1.png');
+    background-repeat: no-repeat;
+    width: 21px;
+    margin-right: 1px;
+    height: 20px;
+}
+
+.jenskaya-konsultaciya-item {
+	border-width: 1px;
+    border-color: #c8c8c8;
+    border-style: solid;
+    background-color: #ffffff;
+    width: 988px;
+    margin-left: 15px;
+    padding: 10px;
+}
+.jenskaya-konsultaciya-title{
+	    margin-bottom: 10px;
+}
+
+.jenskaya-konsultaciya-title h1{
+	 
+	color:  #3e3e3e!important;
+	font-size: 24px!important;
+	font-weight: 400!important;
+	text-align: left!important;
+	text-indent: 0!important;
+}
+
+.jenskaya-konsultaciya-item .img_item {
+	width: 595px;
+	float: left;
+	background-position: top center!important;
+	background-size: cover!important;
+	height: 300px;
+}
+
+.jenskaya-konsultaciya-item .maps {
+	float: left;
+	width: 360px;
+	height: 150px;
+	    overflow: hidden;
+	    margin-left: 10px;
+}
+
+.jenskaya-konsultaciya-item .maps .bx-google-map {
+	width: 100% !important;
+	max-width: 360px!important;
+	height: 150px!important;
+}
+
+.jenskaya-konsultaciya-item .info {
+	padding-left: 17px;
+    margin-top: 26px;
+}
+
+.jenskaya-konsultaciya-item .info .info_item_adres {
+	background: url('/bitrix/templates/babytoday/img/icons/maps_icons.png');
+	background-repeat: no-repeat;
+	padding-left: 30px;
+	    min-height: 40px;
+}
+.jenskaya-konsultaciya-item .info .info_item_phone {
+	background: url('/bitrix/templates/babytoday/img/icons/phone_icons.png');
+	background-repeat: no-repeat;
+	padding-left: 30px;
+	    min-height: 40px;
+}
+.jenskaya-konsultaciya-item .info .info_item_site {
+	background: url('/bitrix/templates/babytoday/img/icons/site_icons.png');
+	background-repeat: no-repeat;
+	padding-left: 30px;
+	    min-height: 40px;
+}
+
+
+
+
+
+
+
+
+.jenskaya-konsultaciya-item .topic .reviews-form {
+	background-color: #ffffff;
+}
+
+.jenskaya-konsultaciya-item .topic .lha-iframe {
+	border-width: 1px!important;
+	border-color:  #c8c8c8;
+	border-style: solid;
+}
+
+.jenskaya-konsultaciya-item .topic .reviews-reply-fields {
+	padding: 0px;
+}
+
+/* /Женская консультация */
+
+
+
+
+/* Юр советы */
+
+.yur-sov-list {
+	border-width: 1px;
+    border-color: #c8c8c8;
+    border-style: solid;
+    background-color: #ffffff;
+    padding: 5px;
+    width: 994px;
+    padding-top: 60px;
+    color: #282828;
+    font-size: 16px;
+    font-family: 'Segoe UI';
+}
+
+.yur-sov-list .news-list .img {
+	width: 334px;
+	height: 223px;
+	background-size: cover!important;
+	background-position: top center!important;
+}
+
+.yur-sov-item .news-detail {
+	max-width: 972px;
+	border:none;
+}
+
+.yur-sov-item .news-detail .img {
+	width: 334px;
+	height: 223px;
+	background-size: cover!important;
+	background-position: top center!important;
+	float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.yur-sov-list .news-item {
+	margin-bottom: 20px;
+	font-family1: 'Segoe UI'!important;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.yur-sov-list .news-item a {
+	text-decoration: none;
+}
+
+.yur-sov-list .podrobnee {
+	 
+	color: rgb(8, 90, 204);
+	font-size: 12px;
+	font-weight: 400;
+	text-align: left;
+	display: block;
+	text-decoration: none;
+	float: right;
+}
+
+.yur-sov-list .preview_picture {
+	margin-right: 18px!important;
+	margin-left: 21px;
+    float: left;
+}
+.title_yur_sov {
+	color: #345AC8;
+    font-size: 16px;
+    font-family1: 'Segoe UI';
+    font-family: 'PT Sans', sans-serif;
+}
+
+.title_yur_sov a {
+	font-size: 18px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #282828;
+    font-family: 'Segoe UI';
+}
+
+.yur-sov-list .title_yur_sov:hover {
+	text-decoration: underline;
+
+}
+
+
+
+
+.yur-sov-item {
+		border-width: 1px;
+    border-color: #c8c8c8;
+    border-style: solid;
+    background-color: #ffffff;
+    padding: 5px;
+    width: 994px;
+    padding-top: 19px;
+    color: #3e3e3e;
+}
+
+.title_yur_sov_item {
+	color: #282828;
+    font-family: 'Segoe UI';
+	font-size: 24px;
+	font-weight: 400;
+	text-align: left;
+   	margin-bottom: 18px;
+    margin-left: 15px;
+}
+
+/* end Юр советы */
+
+
+
+.form_new_com {
+
+}
+
+.form_new_com .reviews-form {
+background-color: #ffffff;
+}
+
+
+
+.form_new_com .reviews-reply-field-author label, .form_new_com .reviews-reply-field-email label{
+	float: left;
+	width: 200px;
+	 
+color:  #3e3e3e;
+font-size: 18px;
+font-weight: 400;
+line-height: 36px;
+text-align: left;
+}
+
+.form_new_com .reviews-reply-field-author span {
+	float: left;
+}
+
+.form_new_com div.reviews-reply-field-author, .form_new_com div.reviews-reply-field-email {
+	width: 100%;
+}
+
+.form_new_com .reviews-reply-header {
+	background-color: #ffffff;
+	float: left;
+	width: 200px;
+	padding: 1em 0em;
+		float: left;
+	width: 200px;
+	 
+color:  #3e3e3e;
+font-size: 18px;
+font-weight: 400;
+line-height: 36px;
+text-align: left;
+}
+
+.form_new_com .bxlhe-frame {
+	float1: left;
+	max-width: 730px!important;
+	width: 100%;
+}
+
+.form_new_com .bxlhe-frame .bxlhe-editor-toolbar-row {
+	display: none;
+}
+
+.form_new_com .lhe-resize-row {
+	display: none;
+}
+
+.form_new_com .reviews-required-field {
+	 
+color: red;
+font-size: 12px;
+font-weight: 400;
+line-height: 36px;
+text-align: left;
+margin-left: 20px;
+}
+
+.form_new_com .send_button {
+	background-color:  #0059d1;
+max-width: 364px;
+width: 100%;
+height: 51px;
+border: none;
+ 
+color:  #ffffff;
+font-size: 18px;
+font-weight: 400;
+}
+
+.form_new_com .reviews-reply-buttons {
+	text-align: right;
+}
+
+.form_new_com_list {
+	padding-left: 20px;
+	padding-right: 10px;
+}
+
+.form_new_com_list .reviews-block-inner .review-avatar{
+	display: none;
+}
+
+.form_new_com_list p.name {
+	 
+color:  #3e3e3e;
+font-size: 24px;
+font-weight: 400;
+line-height: 24px;
+}
+
+.form_new_com_list .message-post-date {
+	 
+color:  #3e3e3e;
+font-size: 14px!important;
+font-weight: 400;
+line-height: 24px;
+}
+
+.form_new_com_list .reviews-post-reply-buttons {
+	display: none;
+}
+
+.form_new_com_list .table.reviews-post-table {
+	display: none;
+}
+
+.form_new_com_list .reviews-text {
+	 
+color:  #3e3e3e;
+font-size: 14px;
+font-weight: 400;
+text-align: justify;
+text-indent: 19.995px;
+}
+
+.planirovanie-detail .topic .lha-iframe {
+    border-width: 1px!important;
+    border-color: #c8c8c8;
+    border-style: solid;
+}
+
+.planirovanie-detail .reviews-reply-header {
+	padding-left1: 20px;
+}
+
+div.reviews-reply-fields {
+	padding: 0em 0em 0em 0em;
+}
+
+.planirovanie-detail .topic {
+	margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+/* справочник и рейтинг */
+.spr_i_rey_gl {
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 313px;
+	min-height: 550px;
+	margin-top: 10px;
+
+	position: relative;
+}
+
+.spr_i_rey_gl .podrobnee {
+	position: absolute;
+	right: 0px;
+	bottom: 10px;
+
+	background-color:  #e31e24;
+	width: 179px;
+	height: 34px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.spr_i_rey_gl .podrobnee a {
+	 
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: 400;
+	
+}
+
+.spr_i_rey_gl img {
+	width: 313px;
+	margin-bottom: 15px;
+
+}
+
+.spr_i_rey_gl h2 {
+	text-align: center;
+	border-width: 1px;
+    border-color: #c8c8c8;
+    border-style: solid;
+    height: 44px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.spr_i_rey_gl h2 a{
+	 
+	color:  #345ac8;
+	font-size: 24px;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 5px;
+    display: block;
+}
+
+
+
+
+
+
+
+.medicina_maps {
+	background: url('/bitrix/templates/babytoday/img/spravochnik/medicina_fon_maps.png');
+	width: 981px;
+	height: 510px;
+	margin: 10px;
+	position: relative;
+}
+
+.razvlechenie_maps {
+	background: url('/bitrix/templates/babytoday/img/spravochnik/razvlechenie_fon_maps.png');
+	width: 981px;
+	height: 510px;
+	margin: 10px;
+	position: relative;
+}
+
+.obrazovanie_maps {
+	background: url('/bitrix/templates/babytoday/img/spravochnik/obrazovanie_fon_maps.png');
+	width: 981px;
+	height: 510px;
+	margin: 10px;
+	position: relative;
+}
+
+/* Женская консультация */
+.medicina_maps .jenskaya_konsultaciya {
+	position: absolute;
+	width: 275px;
+	height: 120px;
+	left: 80px;
+	top:70px;
+}
+
+.medicina_maps .jenskaya_konsultaciya .block_text {
+    border-width: 1px;
+    border-color: #008f45;
+    border-style: solid;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.75);
+    width: 275px;
+    height: 67px;
+    position: relative;
+    margin-top: 54px;
+     
+    color: rgba(0, 143, 69, 0.79);
+    font-size: 18px;
+    font-weight: 700;
+    text-align: justify;
+    padding-left: 120px;
+    padding-top: 10px;
+    line-height: 21px;
+}
+.medicina_maps .jenskaya_konsultaciya .block_text:hover {    box-shadow: 0px 0px 5px 4px;}
+
+.medicina_maps .jenskaya_konsultaciya .block_text .block_img {
+	position: absolute;
+	top: -49px;
+    left: 22px;
+}
+
+
+/* поликлиника */
+.medicina_maps .policlinika {
+	position: absolute;
+	width: 275px;
+	height: 120px;
+    left: 79px;
+    bottom: 15px;
+}
+
+.medicina_maps .policlinika .block_text {
+    border-width: 1px;
+    border-color: #e31e24;
+    border-style: solid;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.75);
+    width: 275px;
+    height: 67px;
+    position: relative;
+    margin-top: 54px;
+     
+    color: #e31e24;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: justify;
+    padding-left: 120px;
+    padding-top: 22px;
+    line-height: 21px;
+}
+.medicina_maps .policlinika .block_text:hover {    box-shadow: 0px 0px 5px 4px;}
+
+.medicina_maps .policlinika .block_text .block_img {
+	position: absolute;
+	top: -49px;
+    left: 22px;
+}
+
+/* род дом */
+.medicina_maps .rod_dom {
+	position: absolute;
+    width: 275px;
+    height: 120px;
+    left: 408px;
+    bottom: 138px;
+}
+
+.medicina_maps .rod_dom .block_text {
+    border-width: 1px;
+    border-color: #ffcc00;
+    border-style: solid;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.75);
+    width: 275px;
+    height: 67px;
+    position: relative;
+    margin-top: 54px;
+     
+    color: #ffcc00;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: justify;
+    padding-left: 110px;
+    padding-top: 22px;
+    line-height: 21px;
+}
+.medicina_maps .rod_dom .block_text:hover {    box-shadow: 0px 0px 5px 4px;}
+
+.medicina_maps .rod_dom .block_text .block_img {
+	position: absolute;
+	top: -49px;
+    left: 22px;
+}
+
+/* больницы */
+.medicina_maps .bol {
+    position: absolute;
+    width: 275px;
+    height: 120px;
+    bottom: 47px;
+    right: 70px;
+}
+
+.medicina_maps .bol .block_text {
+    border-width: 1px;
+    border-color: #008f45;
+    border-style: solid;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.75);
+    width: 275px;
+    height: 67px;
+    position: relative;
+    margin-top: 54px;
+     
+    color: #008f45;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: justify;
+    padding-left: 120px;
+    padding-top: 22px;
+    line-height: 21px;
+}
+.medicina_maps .bol .block_text:hover {    box-shadow: 0px 0px 5px 4px;}
+
+.medicina_maps .bol .block_text .block_img {
+	position: absolute;
+    top: -22px;
+    left: 15px;
+}
+
+
+/* мед центры */
+.medicina_maps .med_centri {
+	position: absolute;
+    width: 275px;
+    height: 120px;
+    bottom: 254px;
+    right: 8px;
+}
+
+.medicina_maps .med_centri .block_text {
+    border-width: 1px;
+    border-color: #085acc;
+    border-style: solid;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.75);
+    width: 275px;
+    height: 67px;
+    position: relative;
+    margin-top: 54px;
+     
+    color: #085acc;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: justify;
+    padding-left: 120px;
+    padding-top: 10px;
+    line-height: 21px;
+}
+.medicina_maps .med_centri .block_text:hover {    box-shadow: 0px 0px 5px 4px;}
+
+.medicina_maps .med_centri .block_text .block_img {
+position: absolute;
+    top: -15px;
+    left: 2px;
+}
+
+/* клиники */
+.medicina_maps .kliniki {
+    position: absolute;
+    width: 275px;
+    height: 120px;
+    top: 3px;
+    right: 160px;
+}
+
+.medicina_maps .kliniki .block_text {
+    border-width: 1px;
+    border-color: #e31e24;
+    border-style: solid;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.75);
+    width: 275px;
+    height: 67px;
+    position: relative;
+    margin-top: 54px;
+     
+    color: #e31e24;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: justify;
+    padding-left: 100px;
+    padding-top: 22px;
+    line-height: 21px;
+}
+.medicina_maps .kliniki .block_text:hover {    box-shadow: 0px 0px 5px 4px;}
+
+.medicina_maps .kliniki .block_text .block_img {
+position: absolute;
+    top: -29px;
+    left: 7px;
+}
+
+
+
+/* РАЗВЛЕЧЕНИЯ */
+
+/* кинотеатры */
+.razvlechenie_maps .kinoteatri {
+	position: absolute;
+    width: 275px;
+    height: 120px;
+    top: 2px;
+    left: 45px;
+}
+
+.razvlechenie_maps .kinoteatri .block_text {
+    border-width: 1px;
+    border-color: #008f45;
+    border-style: solid;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.75);
+    width: 275px;
+    height: 67px;
+    position: relative;
+    margin-top: 54px;
+     
+    color: #008f45;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: justify;
+    padding-left: 128px;
+    padding-top: 22px;
+    line-height: 21px;
+}
+.razvlechenie_maps .kinoteatri .block_text:hover {box-shadow: 0px 0px 5px 4px;}
+
+.razvlechenie_maps .kinoteatri .block_text .block_img {
+    position: absolute;
+    top: -31px;
+    left: 4px;
+}
+
+/* театры */
+.razvlechenie_maps .teatri {
+	position: absolute;
+    width: 275px;
+    height: 120px;
+    top: -21px;
+    right: 258px;
+}
+
+.razvlechenie_maps .teatri .block_text {
+    border-width: 1px;
+    border-color: #ffcc00;
+    border-style: solid;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.75);
+    width: 275px;
+    height: 67px;
+    position: relative;
+    margin-top: 54px;
+     
+    color: #ffcc00;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: justify;
+    padding-left: 128px;
+    padding-top: 22px;
+    line-height: 21px;
+}
+.razvlechenie_maps .teatri .block_text:hover {box-shadow: 0px 0px 5px 4px;}
+
+.razvlechenie_maps .teatri .block_text .block_img {
+    position: absolute;
+    top: -31px;
+    left: 4px;
+}
+
+/* торговый центр */
+.razvlechenie_maps .torg_centr {
+    position: absolute;
+    width: 275px;
+    height: 120px;
+    top: 140px;
+    left: 332px;
+}
+
+.razvlechenie_maps .torg_centr .block_text {
+    border-width: 1px;
+    border-color: #e31e24;
+    border-style: solid;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.75);
+    width: 275px;
+    height: 67px;
+    position: relative;
+    margin-top: 54px;
+     
+    color: #e31e24;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: justify;
+    padding-left: 115px;
+    padding-top: 10px;
+    line-height: 21px;
+}
+.razvlechenie_maps .torg_centr .block_text:hover {box-shadow: 0px 0px 5px 4px;}
+
+.razvlechenie_maps .torg_centr .block_text .block_img {
+    position: absolute;
+    top: -17px;
+    left: 19px;
+}
+
+/* ледовые катки */
+.razvlechenie_maps .led_katki {
+	position: absolute;
+    width: 275px;
+    height: 120px;
+    top: 107px;
+    right: 25px;
+}
+
+.razvlechenie_maps .led_katki .block_text {
+    border-width: 1px;
+    border-color: #345ac8;
+    border-style: solid;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.75);
+    width: 275px;
+    height: 67px;
+    position: relative;
+    margin-top: 54px;
+     
+    color: #345ac8;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: justify;
+    padding-left: 128px;
+    padding-top: 10px;
+    line-height: 21px;
+}
+.razvlechenie_maps .led_katki .block_text:hover {box-shadow: 0px 0px 5px 4px;}
+
+.razvlechenie_maps .led_katki .block_text .block_img {
+    position: absolute;
+	top: -37px;
+    left: 7px;
+}
+
+/* парки */
+.razvlechenie_maps .parki {
+    position: absolute;
+    width: 275px;
+    height: 120px;
+    bottom: 89px;
+    right: 82px;
+}
+
+.razvlechenie_maps .parki .block_text {
+    border-width: 1px;
+    border-color: #508e4b;
+    border-style: solid;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.75);
+    width: 275px;
+    height: 67px;
+    position: relative;
+    margin-top: 54px;
+     
+    color: #508e4b;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: justify;
+    padding-left: 140px;
+    padding-top: 21px;
+    line-height: 21px;
+}
+.razvlechenie_maps .parki .block_text:hover {box-shadow: 0px 0px 5px 4px;}
+
+.razvlechenie_maps .parki .block_text .block_img {
+    position: absolute;
+	top: -50px;
+    left: -7px;
+}
+
+/* спорт комплекс */
+.razvlechenie_maps .sport_com {
+	position: absolute;
+    width: 275px;
+    height: 120px;
+    bottom: 17px;
+    left: 304px;
+}
+
+.razvlechenie_maps .sport_com .block_text {
+    border-width: 1px;
+    border-color: #dfaf29;
+    border-style: solid;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.75);
+    width: 275px;
+    height: 67px;
+    position: relative;
+    margin-top: 54px;
+     
+    color: #dfaf29;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: justify;
+	padding-left: 119px;
+    padding-top: 10px;;
+    line-height: 21px;
+}
+.razvlechenie_maps .sport_com .block_text:hover {box-shadow: 0px 0px 5px 4px;}
+
+.razvlechenie_maps .sport_com .block_text .block_img {
+    position: absolute;
+	top: -31px;
+    left: 7px;
+}
+
+/* басейны */
+.razvlechenie_maps .baseini {
+	position: absolute;
+    width: 275px;
+    height: 120px;
+    bottom: 145px;
+    left: 19px;
+}
+
+.razvlechenie_maps .baseini .block_text {
+    border-width: 1px;
+    border-color: #345ac8;
+    border-style: solid;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.75);
+    width: 275px;
+    height: 67px;
+    position: relative;
+    margin-top: 54px;
+     
+    color: #345ac8;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: justify;
+	padding-left: 147px;
+    padding-top: 21px;;
+    line-height: 21px;
+}
+.razvlechenie_maps .baseini .block_text:hover {box-shadow: 0px 0px 5px 4px;}
+
+.razvlechenie_maps .baseini .block_text .block_img {
+    position: absolute;
+	top: -8px;
+    left: -14px;
+}
+
+
+
+
+/* Образование */
+.obrazovanie_maps .razv_centr {
+    position: absolute;
+    width: 275px;
+    height: 120px;
+    bottom: 240px;
+    left: 85px;
+}
+
+.obrazovanie_maps .razv_centr .block_text {
+    border-width: 1px;
+    border-color: #008f45;
+    border-style: solid;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.75);
+    width: 275px;
+    height: 67px;
+    position: relative;
+    margin-top: 54px;
+     
+    color: #008f45;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: justify;
+    padding-left: 117px;
+    padding-top: 10px;
+    line-height: 21px;
+}
+.obrazovanie_maps .razv_centr .block_text:hover {box-shadow: 0px 0px 5px 4px;}
+
+.obrazovanie_maps .razv_centr .block_text .block_img {
+    position: absolute;
+    top: -35px;
+    left: 13px;
+}
+
+
+
+
+.obrazovanie_maps .det_sad {
+	position: absolute;
+    width: 275px;
+    height: 120px;
+    top: 15px;
+    right: 212px;
+}
+
+.obrazovanie_maps .det_sad .block_text {
+    border-width: 1px;
+    border-color: #e31e24;
+    border-style: solid;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.75);
+    width: 275px;
+    height: 67px;
+    position: relative;
+    margin-top: 54px;
+     
+    color: #e31e24;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: justify;
+    padding-left: 114px;
+    padding-top: 23px;
+    line-height: 21px;
+}
+.obrazovanie_maps .det_sad .block_text:hover {box-shadow: 0px 0px 5px 4px;}
+
+.obrazovanie_maps .det_sad .block_text .block_img {
+    position: absolute;
+    top: -35px;
+    left: 5px;
+} 
+
+
+.obrazovanie_maps .school {
+	position: absolute;
+    width: 275px;
+    height: 120px;
+    bottom: 120px;
+    right: 122px;
+}
+
+.obrazovanie_maps .school .block_text {
+    border-width: 1px;
+    border-color: #085acc;
+    border-style: solid;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.75);
+    width: 275px;
+    height: 67px;
+    position: relative;
+    margin-top: 54px;
+     
+    color: #085acc;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: justify;
+    padding-left: 150px;
+    padding-top: 22px;
+    line-height: 21px;
+}
+.obrazovanie_maps .school .block_text:hover {box-shadow: 0px 0px 5px 4px;}
+
+.obrazovanie_maps .school .block_text .block_img {
+    position: absolute;
+    top: -19px;
+    left: 5px;
+} 
+
+/* forum */
+div.forum-header-box {
+	background: #de6564;
+	border-color: #de6564;
+}
+
+div.forum-header-box span {
+	text-transform: uppercase;
+	 
+}
+
+.forum-block-inner table  thead{
+	background-color:  #f1f1f1;
+}
+
+.forum-block-inner table  thead a {
+	 
+	color:  #3e3e3e;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 17px;
+	text-transform: uppercase;
+	text-decoration: none;	
+}
+
+.forum-block-inner .forum-icon-default {background: none;}
+
+div.forum-icon {width: 0px;}
+div.forum-icon-container {width: 0px;}
+
+.forum-block-inner table tbody tr td {background: none;}
+.forum-block-inner table tbody tr:hover {
+	background: url('/bitrix/templates/babytoday/img/forum_bg_hover.png');
+}
+
+.forum-column-title .forum-item-name a{
+	 
+	color:  #163f72;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 17px;
+	text-decoration: none;
+}
+.forum-column-title .forum-item-name a:hover {
+	text-decoration: underline;
+}
+
+.forum-item-desc a {
+	 
+	color:  #3e3e3e;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 17px;
+	text-decoration: none;
+	text-align: justify;
+}
+
+.forum-item-desc a:hover {
+	text-decoration: underline;
+	color:  #163f72;
+
+}
+
+.forum-column-topics, .forum-column-replies,  .forum-column-lastpost{
+	 
+    color: #3e3e3e;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+
+
+.aktual_index {
+	width: 100%;
+	float: left;
+	margin-top: 24px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+}
+
+.aktual_index .aktual_index_item {
+	position:relative;
+	width: 280px;
+	height: 203px;
+	float: left;
+	background-position: top center!important;
+	background-size: cover!important;
+}
+
+.aktual_index .aktual_index_item:first-child {
+	width: 420px;
+	height: 406px	
+}
+
+.aktual_index .aktual_index_item .name {
+	position: absolute;
+	bottom:0px;
+	width: 100%;
+	text-align: left;
+	min-height: 40px;
+	padding: 3px 0px;
+	
+}
+
+.aktual_index .aktual_index_item .name a {
+	font-family: 'Calibri';
+	color:  #ffffff;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: justify;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+	text-decoration: none;
+	margin-top: 2px;
+    display: block;
+    margin-left: 5px;
+    text-align: left;	
+}
+
+.aktual_index .aktual_index_item .name a:hover {text-decoration: underline;}
+
+.soc_opros-container {
+	margin: 0 15px;
+	padding-top: 30px;
+}
+
+.soc_opros-container:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.zag_in {
+	color:  #282828;
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.soc_opros ol.vote-answers-list {color:#ffffff;font-size: 18px;}
+
+
+
+.soc_opros input[type="checkbox"] + label {
+    margin-left: 20px;
+    background: url('/bitrix/templates/babytoday/img/chek_no.jpg') 0 0 no-repeat;
+    padding-left: 40px;
+    height: 30px;
+    display: block;
+    margin-top: 15px;
+}
+
+.soc_opros input[type="checkbox"]:checked + label {
+    margin-left: 20px;
+    background-position: 0 -30px;
+    height: 30px;
+    display: block;
+    padding-top: 0px;
+}
+
+
+.ul_gl {
+	line-height: 30px;
+}
+
+.ul_gl li {
+	background: url('/bitrix/templates/babytoday/img/li_gl.png') no-repeat;
+	padding-left: 20px;
+	background-position: 0px 4px;
+}
+
+.ul_gl li span {text-decoration: underline;}
+
+
+
+.socnew .bx-sm-feature-select .bx-sm-parent .bx-sm-header {background: none;}
+.socnew .bx-sm-feature-select .bx-sm-parent {background: none;}
+
+.socnew {}
+
+.socnew #im_1 {
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-style: solid;
+	border-width: 1px;
+	border-color:  rgba(65, 109, 6, 50);
+	box-sizing: border-box;
+	background-color:  rgba(238, 238, 238, 0);
+	background: -webkit-linear-gradient(90deg, rgba(12, 58, 123, 0.8) 0%, rgba(8, 90, 204, 0.8) 99%);
+	background: -moz-linear-gradient(90deg, rgba(12, 58, 123, 0.8) 0%, rgba(8, 90, 204, 0.8) 99%);
+	background: -o-linear-gradient(90deg, rgba(12, 58, 123, 0.8) 0%, rgba(8, 90, 204, 0.8) 99%);
+	background: -ms-linear-gradient(90deg, rgba(12, 58, 123, 0.8) 0%, rgba(8, 90, 204, 0.8) 99%);
+	background: linear-gradient(0deg, rgba(12, 58, 123, 0.8) 0%, rgba(8, 90, 204, 0.8) 99%);
+	/* Layer contains multiple layer styles that cannot be represented in CSS. Use the color picker or extract the layer as an image. */
+	width: 130px;
+	height: 42px;
+}
+
+.socnew #im_2 {
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-style: solid;
+	border-width: 1px;
+	border-color:  rgba(65, 109, 6, 50);
+	box-sizing: border-box;
+	background-color:  rgba(238, 238, 238, 0);
+	background: -webkit-linear-gradient(90deg, rgba(170, 13, 18, 0.5) 0%, rgba(227, 30, 36, 0.5) 100%);
+	background: -moz-linear-gradient(90deg, rgba(170, 13, 18, 0.5) 0%, rgba(227, 30, 36, 0.5) 100%);
+	background: -o-linear-gradient(90deg, rgba(170, 13, 18, 0.5) 0%, rgba(227, 30, 36, 0.5) 100%);
+	background: -ms-linear-gradient(90deg, rgba(170, 13, 18, 0.5) 0%, rgba(227, 30, 36, 0.5) 100%);
+	background: linear-gradient(0deg, rgba(170, 13, 18, 0.5) 0%, rgba(227, 30, 36, 0.5) 100%);
+	/* Layer contains multiple layer styles that cannot be represented in CSS. Use the color picker or extract the layer as an image. */
+	width: 130px;
+	height: 42px;
+}
+.socnew #s2 {}
+.socnew #s3 {}
+.socnew #s4 {}
+.socnew #s5 {}
+
+
+
+
+
+
+.bg_auth_top{
+	background-image: url('/bitrix/templates/babytoday/img/Color_Border.png');
+	background-repeat: no-repeat;
+	height: 9px;
+	position: absolute;
+	left: 0;
+	top: -8px;
+	width: 100%;
+}
+.title_auth{
+    color: #282828;
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 0px 2px 0px #ffffff;
+    font-weight: bold;
+    background-color: #f7f7f7;
+    height: 50px;
+    max-width: 351px;
+    width: calc(100% + 56px); 
+    margin: -4px 0 20px -28px;
+    padding-top: 25px;
+}
+.block_auth{
+	position: relative;
+	background-color: #ffffff;
+	box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.2);
+	width: 295px;
+	/*height: 544px;*/
+	max-width: 500px;
+	margin: 20px auto 0;
+	padding: 15px 28px;
+	box-sizing: border-box;
+}
+
+.bx-authform.block_auth {
+	max-width: 351px;
+	margin: 0 auto;
+}
+.soclenta.au form[name="form_auth"] input[name="USER_LOGIN"],
+.soclenta.au form[name="form_auth"] input[name="USER_PASSWORD"]{
+	border-radius: 6px;
+	border-style: solid;
+	border-width: 2px;
+	border-color:  #ebebeb;
+	box-sizing: border-box;
+	background-color:  #ffffff;
+	box-shadow: 0px 3px 0px 0px #ebebeb;
+	height: 50px;
+	color:  #717171;
+	padding-left: 40px;
+	font-size: 18px;
+}
+.soclenta.au form[name="form_auth"] input[name="USER_LOGIN"]{
+	background-image: url('/bitrix/templates/babytoday/img/log_us.png');
+	background-repeat: no-repeat;
+    background-position: 10px 12px;
+    background-size: 18px;
+}
+.soclenta.au form[name="form_auth"] input[name="USER_PASSWORD"]{
+	background-image: url('/bitrix/templates/babytoday/img/log_pass.png');
+	background-repeat: no-repeat;
+    background-position: 10px 12px;
+    background-size: 18px;
+}
+.soclenta.au form[name="form_auth"] input[name="USER_REMEMBER"]{
+	display: none;
+}
+.soclenta.au form[name="form_auth"] input[name="Login"]{
+    border-radius: 6px;
+    background-color: #c32328;
+    width: 294px;
+    height: 50px;
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.bx-authform-formgroup-container{
+	text-align: center;
+}
+.bx-authform-social ul{
+	margin: 0 auto;
+	display: block;
+	width: 262px;
+}
+.bx-authform-social.reg {
+    margin-top: 20px;
+}
+.bx-authform-link-container,
+.bx-authform-description-container{
+	font-size: 16px;
+}
+.bg_auth_bottom{
+	background-image: url('/bitrix/templates/babytoday/img/bg_auth_bottom.png');
+	background-repeat: no-repeat;
+	height: 25px;
+	position: absolute;
+	left: -3px;
+	bottom: -15px;
+	background-size: 357px;
+	width: 103%;
+}
+.soclenta.au form[name="form_auth"] input[type="checkbox"] {
+    display:none;
+}
+.soclenta.au form[name="form_auth"] input[type="checkbox"] + label span {
+    float: left;
+    width: 36px;
+    height: 38px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(/bitrix/templates/babytoday/img/schek.png) left top no-repeat;
+    cursor:pointer;
+}
+.soclenta.au form[name="form_auth"] input[type="checkbox"]:checked + label span {
+    background:url(/bitrix/templates/babytoday/img/schek_act.png) 0px top no-repeat;
+}
+.soclenta.au form[name="form_auth"] input[type="checkbox"] + label{
+	margin-left: 0;
+	background: none;
+	padding-left: 0;
+	padding-top: 0;
+	height: 25px;
+	cursor: pointer;
+}
+.remem{
+    float: left;
+    width: 250px;
+    text-align: left;
+    white-space: nowrap;
+    padding-top: 5px;
+    margin-left: -3px;
+}
+.block_v_profile #s2 .gdparent{
+	border: none;
+}
+.block_v_profile #s2 .dop_ .gdheader{
+	display: none;
+}
+.block_v_profile #s2 .dop_ .urman{
+	color:  #282828;
+	font-size: 24px;
+	margin-bottom: 13px;
+}
+.block_v_profile #s2 .gdheader{
+	color: #282828;
+	background-color: rgba(8, 90, 204, 0.1);
+}
+.block_v_profile #s2 .feed-new-message-informer-place{
+	background-color: transparent;
+}
+.block_v_profile #s2 .all_se{
+	display: none;
+}
+.block_v_profile #s2 .gdcorn{
+	display: none;
+}
+.block_v_profile #s0 .gdparent{
+	border: none;
+}
+.block_v_profile #s0 .gdparent .gdheader{
+	background-color: transparent;
+}
+.smor_all{
+	float: right;
+	color:  #085acc;
+	font-size: 16px;
+	text-decoration: underline;
+	font-weight: normal;
+}
+.smor_all span{
+	text-transform: lowercase;
+}
+.block_v_profile #s2 {
+
+}
+
+
+
+.contacts_p h1{margin-bottom: 30px;}
+
+.contacts_p .maps {width: 970px;margin: 0 auto;}
+
+.contacts_p .block1 {
+	float: left;
+	margin-bottom: 30px;
+}
+
+.contacts_p .block2 {
+	float: left;
+	margin-left: 150px;	
+}
+
+.contacts_p .block2 p {
+	font-family: 'Arial';
+	color:  #999999;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: left;
+	background: url('/bitrix/templates/babytoday/img/icons/soc_c2.png') no-repeat;
+	padding-left: 35px;
+    float: left;
+    padding-top: 2px;
+    line-height: 30px;
+}
+.contacts_p .block2 a {
+	display: block;
+	float: left;
+	margin-left: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.contacts_p .block3 {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.contacts_p .phone_c {
+	line-height: 25px;
+	margin-left: 60px;
+	padding-left: 30px;
+	background: url('/bitrix/templates/babytoday/img/icons/phone_c2.png') no-repeat;
+}
+
+.contacts_p .phone_c span {
+	font-family: 'OpenSans';
+	color:  #999999;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: left;
+}
+.contacts_p .phone_c a {
+	font-family: 'OpenSans';
+	color:  #008f45;
+	font-size: 21px;
+	font-weight: 400;
+	text-align: left;
+	text-decoration: none;
+}
+
+
+.contacts_p .adress_c {
+	font-family: 'OpenSans';
+	color:  #04070c;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: left;
+	line-height: 25px;
+	margin-left: 60px;
+	padding-left: 30px;
+	background: url('/bitrix/templates/babytoday/img/icons/map_c2.png') no-repeat;
+}
+
+
+.contacts_p .adress_c .ad {
+	font-family: 'OpenSans';
+	color:  #999999;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: left;
+}
+
+.contacts_p .email_c {
+	line-height: 25px;
+	margin-left: 60px;
+	padding-left: 30px;
+	background: url('/bitrix/templates/babytoday/img/icons/email_c2.png') no-repeat;
+}
+
+.contacts_p .email_c span {
+	font-family: 'OpenSans';
+	color:  #999999;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: left;	
+}
+
+.contacts_p .email_c a {
+	font-family: 'OpenSans';
+	color:  #04070c;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: left;
+	text-decoration: none;
+}
+
+.block_director {
+	width: 994px;
+	height: 332px;
+	border: 1px solid #e4e4e4;
+	margin-left: 6px;	
+}
+
+.block_director img {
+	width: 250px;
+	height: 250px;
+	margin-top: 38px;
+    margin-left: 32px;
+    float: left;
+}
+
+.block_director .info_director {
+	float: left;
+	margin-left: 44px;
+	width: 660px;
+	margin-top: 66px;
+	line-height: 20px;
+}
+
+.block_director .info_director .name {
+	color: #355bc8;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 18px;
+	margin-bottom: 18px;
+}
+
+.block_director .info_director .descript {
+	color: black;
+	font-family: 'OpenSans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: 0.60px;
+}
+
+.block_director .zapis_na_konsultac {
+	float: left;
+	width: 309px;
+	height: 52px;
+	background: #085acc url('/images/zapis.png') no-repeat;
+	background-position: 13px 5px;
+	margin-top: 14px;
+    margin-left: 45px;
+    cursor: pointer;
+
+
+}
+
+.block_director .zapis_na_konsultac span {
+	color: #ffffff;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 18px;
+	display: block;
+	margin-left: 61px;
+	margin-top: 8px;
+}
+.calendar-pregnancy-ico{
+	display: inline-block;
+	text-decoration: none;
+}
+.calendar-pregnancy-ico:before{
+	content:'';
+}
+.planirovanie-item .counters,.planirovanie-item .counter_comment{    
+	color: #505050;
+    font-size: 12px;
+    display: inline-block;
+	vertical-align:top;
+    position: absolute;
+    padding: 0 0 0 16px;
+    width: 30px;
+	margin-top: 4px;
+	font-weight: normal;
+	bottom: 4px;
+    left: 5px;
+	height:12px;
+}
+.planirovanie-item .counter_comment{
+	left:inherit;
+	right: 70px;
+}
+.planirovanie-detail .counters:before, .planirovanie-detail .counter_comment:before{    left: -21px;}
+.counters:before,.counter_comment:before{
+	content: '';
+    display: block;
+    width: 15px;
+    height: 13px;
+    background-image: url(/images/view-coment.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 3px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+.counter_comment:before {
+    background-position: 0px -13px;
+    top: 0px;
+}
+
+.planirovanie-detail .counters, .planirovanie-detail .counter_comment{
+    font-size: 14px;
+    margin: 2px 0 2px 30px;
+    width: auto;
+    display: inline-block;
+    position: relative;
+	height: 10px;
+}
+
+#wrap #center .calendar-beremennost {
+overflow: hidden;
+    height: auto;
+    clear: both;
+}
+#wrap #center .calendar-beremennost h1{ text-align:left;}
+.calendar-beremennost .calendar{
+    border-top: 1px solid #ACACAC;
+    border-bottom: 1px solid #ACACAC;
+    margin: 20px 0;
+    box-sizing: border-box;
+    padding: 30px 0;
+	box-shadow: inset 0 20px 20px -15px #FFF0B6, inset 0 -20px 20px -15px #FFF0B6;
+}
+.calendar-beremennost .calendar .month{
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+}
+.calendar-beremennost .calendar .month > li{
+	display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    width: 200px;
+    margin-right: 20px;
+    padding-right: 40px;
+}
+
+.banner_helpbaby-xs {
+    display: none;
+}
+
+.calendar-beremennost .calendar .month > li:first-child{margin-left: 60px;}
+.calendar-beremennost .calendar .month li .title{
+	font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 9px;
+}
+.calendar-beremennost .calendar .month li ul{}
+.calendar-beremennost .calendar .month li .day{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid #bbb;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 3px 8px 0;
+}
+.calendar-beremennost .calendar .month li .day.act{
+	background:#6BAED2;
+}
+.calendar-beremennost .calendar .month li .day.act a{
+	color:#fff;
+	font-weight:bold;
+}
+.calendar-beremennost .calendar .month li .day:hover{background:#E6F0FF;}
+.calendar-beremennost .calendar .month li .day.act:hover a{
+	color:#666;
+	font-weight:bold;
+}
+.calendar-beremennost .calendar .month li .day a{
+    color: #666;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 6px 0 5px;
+    box-sizing: border-box;
+}
+.calendar-beremennost .calendar .month li .day a span{}
+.calendar-beremennost .content-calendar{
+    margin: 51px 20px 0;
+}
+.calendar-beremennost .content-calendar .tabs{}
+.calendar-beremennost .content-calendar .tabs ul{}
+.calendar-beremennost .content-calendar .tabs > ul > li{
+    padding: 12px 10px;
+    display: inline-block;
+	cursor:pointer;
+}
+.calendar-beremennost .content-calendar .tabs ul li.act{
+    box-shadow: inset 0px -3px 0px #00C9F4;
+}
+.calendar-beremennost .content-calendar .tabs ul li:hover{
+	box-shadow: inset 0px -3px 0px #ccc;
+}
+.calendar-beremennost .content-calendar .tabs ul li span{
+	text-transform: uppercase;
+    font-size: 14px;
+}
+.calendar-beremennost .content-calendar .tabs > div{margin-top: 20px; display: none;}
+.calendar-beremennost .content-calendar .tabs > div .title{
+	font-size: 20px;
+    font-weight: bold;
+}
+.calendar-beremennost .content-calendar .tabs > div .info-block{
+    background: #D0F1DF;
+    margin: 20px 0px 28px;
+    min-height: 58px;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    font-size: 18px;
+    color: #666;
+}
+.calendar-beremennost .content-calendar .tabs > div .info-block div{
+    display: inline-block;
+    margin-right: 25px;
+}
+.calendar-beremennost .content-calendar .tabs > div .info-block div span{    
+	color: #000;
+    font-weight: bold;
+}
+#wrap #center .calendar-beremennost .content-calendar .tabs > div .text{
+	padding-left: 0;
+	padding-right: 0;
+}
+#wrap #center .calendar-beremennost .content-calendar .tabs > div .text li{
+	padding: 0 0 10px 50px;
+	display:block;
+	cursor: initial;
+	box-shadow: none!important;
+}
+.calendar-pregnancy-ico{
+    float: left;
+    width: 100px;
+    margin: 34px 0 0 60px;
+    color: #3e3e3e;
+    font-size: 14px;
+    position: relative;
+}
+.calendar-pregnancy-ico:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url(/images/calener-icon.png);
+    left: -36px;
+    top: -3px;
+}
+
+.kalendar_bottom_text{
+	margin: 51px 20px 0;
+}
+.kalendar_bottom_text p{
+	line-height: 20px;
+	margin-top: 8px;
+    margin-bottom: 8px;
+}
+.kalendar_bottom_text ul li{
+	padding: 12px 10px;
+	margin-left: 50px;
+}
+.kalendar_bottom_text ul li:before{
+	color: rgb(7, 74, 136);
+    content: "•";
+    padding-right: 6px;
+    font-size: 20px;
+}
+
+.prev-stat a{
+	color: #ffffff;
+    margin: 10px 20px 6px;
+    text-shadow: 0px 0px 1px #000, 0px 0px 1px #000;
+    display: inline-block;
+    text-decoration: none;
+	position:relative;
+	padding: 4px 15px;
+}
+.prev-stat a:hover{text-decoration:underline;}
+.prev-stat a:before{
+	content: '';
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    transform: rotate(45deg);
+    top: 4px;
+    left: -8px;
+}
+.prev-stat.blue a{background:#085ACC;}
+.prev-stat.blue a:before{background:#085ACC;}
+.prev-stat.red a{background:#E31E24;}
+.prev-stat.red  a:before{background:#E31E24;}
+.prev-stat.yellow a{background:#FFCC00;}
+.prev-stat.yellow a:before{background:#FFCC00;}
+.prev-stat.green a{background:#008F45;}
+.prev-stat.green a:before{background:#008F45;}
+
+.planirovanie-item_name {
+    height: 30px;
+    overflow: hidden;
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+.img-big{
+	float:none!important;
+	display:block;
+	margin:10px auto;
+	max-width: 100%;
+	height: auto;
+}
+.img-small-left{
+	display: inline-block;
+    float: left;
+    margin: 0 20px 10px 0;
+}
+.img-small-right{
+	display: inline-block;
+    float: right;
+    margin: 0 0 10px 20px;
+}
+.ps_banner{
+	text-align: center;
+    margin-bottom: 20px;
+}
+
+.ps_banner img {
+	max-width: 100%;
+	height: auto;
+}
+
+div#wrap div.text blockquote{
+    background: #F0F7FF;
+    padding: 15px 60px;
+    box-sizing: border-box;
+	position:relative;
+	font-family:'Museo Cyrl';
+	color: #324fcb;
+    font-size: 20px;
+	display: flex;
+}
+div#wrap div.text blockquote:before{
+	content:'“';
+	display:block;
+	font-size:100px;
+	color:#324fcb;
+	position:absolute;
+	top:40px;
+	left:0;
+	font-family: 'PT Sans', sans-serif;
+}
+div#wrap div.text blockquote p{	
+	color: #324fcb;
+    font-size: 20px;
+    text-indent: 0;
+	font-family:'Museo Cyrl';
+}
+
+.article_content_list{
+    color: #666;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0 20px 50px;
+}
+.article_content_list li{margin-bottom: 5px;}
+.article_content_list li a{
+	font-size: 18px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #666;
+}
+.article_content_list li a:hover{
+	font-weight: bold;
+/*	text-decoration:underline;*/
+}
+ol {
+list-style: none; 
+counter-reset: li; 
+}
+.article_content_list li:before {
+counter-increment: li; 
+content: counters(li,".") ". "; 
+}
+
+.banner_reprio {
+	width: 186px;
+    height: 450px;
+    float: right;
+}
+
+.banner_yolo img, .banner_vesov img {
+	width: 186px;
+}
+
+.img-ic {
+	display: inline-block;
+}
+
+.img-ic-forum {
+	background-image: url('/bitrix/templates/babytoday/img/message.png');
+	background-position: center center;
+	background-repeat: none;
+	width: 25px;
+	height: 23px;
+}
+
+.img-ic-edit {
+	background-image: url('/bitrix/templates/babytoday/img/edit.png');
+	background-position: center center;
+	background-repeat: none;
+	width: 25px;
+	height: 23px;
+}
+
+.mobile-menu,
+.mobile-menu * {
+	box-sizing: border-box;
+}
+
+.mobile-menu {
+	display: none;
+	position: absolute;
+	top: 0;	left: 0;
+	width: 100%;
+	padding: 15px 20px 37px 20px;
+	background: #345bcb;
+	z-index: 5;
+}
+
+.mobile-menu_open {
+	display: block;
+}
+
+.mobile-menu-open {
+	display: none;
+	float: left;
+	margin-top: 17px;
+	margin-left: 20px;
+	background-image: url('/bitrix/templates/babytoday/img/menu-burger.png');
+	width: 19px;
+	height: 14px;
+}
+
+.mobile-menu-actions {
+	margin-bottom: 30px;
+}
+
+.mobile-menu_child-menu-open .mobile-menu-actions {
+	margin-bottom: 16px;
+}
+
+.mobile-menu-close {
+	display: block;
+	background-image: url('/bitrix/templates/babytoday/img/close.png');
+	width: 17px;
+	height: 17px;
+}
+
+.mobile-menu-title-container {
+	position: relative;
+	background: #284fbf;
+	padding: 7px 120px;
+	margin: 0 -20px 18px -20px;
+	color: #fff;
+	display: none;
+}
+
+.mobile-menu_child-menu-open .mobile-menu-title-container {
+	display: block;
+}
+
+.mobile-menu-title-container:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+
+.mobile-menu-back {
+	position: absolute;
+	top: 13px; left: 50px;
+	padding-left: 15px;
+	background-image: url('/bitrix/templates/babytoday/img/long-arrow-left.png');
+	background-repeat: no-repeat;
+	background-size: 11px 7px;
+	background-position: 0 2px;
+	color: #fff;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+.mobile-menu-title {
+	font-size: 22px;
+	line-height: 1.223;
+	text-align: center;
+}
+
+.mobile-menu-nav {
+	margin: 0 -15px;
+	padding-left: 45px;
+}
+
+.mobile-menu-nav,
+.mobile-menu-nav ul {
+	font-size: 0;
+}
+
+.mobile-menu-nav:after {
+	content: '';
+	clear: both;
+	display: table;
+}
+
+.mobile-menu-nav li {
+	display: inline-block;
+	vertical-align: top;
+	width: 33.33%;
+	padding: 0 15px;
+	margin-bottom: 26px;
+	font-size: 16px;
+	line-height: 1.125;
+}
+
+.mobile-menu-nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.mobile-menu-nav .img-ic {
+	margin-right: 10px;
+	vertical-align: top;
+	position: relative;
+	top: -5px;
+}
+
+.mobile-menu-nav li > ul {
+	display: none;
+}
+
+.mobile-menu-item-article > a {
+	color: #ffcc00;
+}
+
+.mobile-menu-nav li.child-menu-open {
+	width: 100%;
+}
+
+.mobile-menu-nav li.child-menu-open > ul {
+	display: block
+}
+
+.mobile-menu-nav li.child-menu-open > a {
+	display: none;
+}
+
+.mobile-menu_child-menu-open .mobile-menu-nav > li:not(.child-menu-open) {
+	display: none;
+}
+
+.articles-categories {
+	display: none;
+	padding: 0 20px;
+}
+
+.articles-categories,
+.articles-categories * {
+	box-sizing: border-box;
+}
+
+.articles-categories h2 {
+	margin-bottom: 18px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.articles-categories ul {
+	font-size: 0;
+	margin: 0 -15px;
+	padding-left: 15px;
+}
+
+.articles-categories li {
+	position: relative;
+	display: inline-block;
+	width: 33.33%;
+	margin-bottom: 15px;
+	padding-left: 16px;
+	padding-right: 15px;
+	vertical-align: top;
+	font-size: 16px;
+	line-height: 1.125;
+}
+
+.articles-categories li.arrow-blue:before,
+.consultation-categories li.arrow-blue:before,
+.articles-categories li.arrow-green:before,
+.consultation-categories li.arrow-green:before,
+.articles-categories li.arrow-red:before,
+.consultation-categories li.arrow-red:before,
+.articles-categories li.arrow-yellow:before,
+.consultation-categories li.arrow-yellow:before {
+	content: '';
+	width: 9px;
+	height: 12px;
+	position: absolute;
+	top: 2px;
+	left: 0;
+}
+
+.consultation-categories li.arrow-blue:before,
+.articles-categories li.arrow-blue:before {
+	background-image: url('/bitrix/templates/babytoday/img/blue-arrow-right.png');
+}
+
+.consultation-categories li.arrow-green:before,
+.articles-categories li.arrow-green:before {
+	background-image: url('/bitrix/templates/babytoday/img/green-arrow-right.png');
+}
+
+.consultation-categories li.arrow-red:before,
+.articles-categories li.arrow-red:before {
+	background-image: url('/bitrix/templates/babytoday/img/red-arrow-right.png');
+}
+
+.consultation-categories li.arrow-yellow:before,
+.articles-categories li.arrow-yellow:before {
+	background-image: url('/bitrix/templates/babytoday/img/yellow-arrow-right.png');
+}
+
+.articles-categories li a,
+.consultation-categories li a {
+	color: #282828;
+	text-decoration: none;
+}
+
+.consultation-categories {
+	display: none;
+	margin: 0 15px 29px 15px;
+}
+
+.consultation-categories li {
+	position: relative;
+	margin-bottom: 15px;
+	padding-left: 16px;
+	font-size: 16px;
+	line-height: 1.125;
+}
+
+.consultation-categories li:last-child {
+	margin-bottom: 0;
+}
+
+.calendar-beremennost_style-1 h2 {
+	display: none;
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 26px;
+	margin-left: 20px;
+}
+
+.popular-articles {
+	display: none;
+	border: 1px solid #888888;
+	padding: 18px 7px 20px 7px;
+	margin: 30px 20px 0 20px;
+}
+
+.popular-articles h2 {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 16px;
+	margin-left: 20px;
+	text-align: center;
+}
+
+.popular-articles-list {
+	margin: 0 -15px -25px -15px;
+	font-size: 0;
+}
+
+.popular-articles .article-preview {
+	height: 80px;
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	padding: 0 15px;
+	margin-bottom: 25px;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+
+.popular-articles .article-preview a {
+	color: black;
+}
+
+.popular-articles .article-preview .preview-image {
+	display: block;
+	width: 140px;
+	height: 100%;
+	float: left;
+}
+
+.popular-articles .article-preview .preview-image img {
+	height: 80px;
+	width: 129px;
+}
+
+.popular-articles .article-preview .preview-text {
+	font-size: 14px;
+	display: block;
+	overflow: hidden;
+	height: 100%;
+}
+
+.planirovanie-list-container_style-2 {
+	margin: 0 15px;
+	width: 1170px;
+}
+
+.planirovanie-list-container_style-2 h2 {
+	margin-bottom: 20px;
+}
+
+.planirovanie-list-container_style-2 .planirovanie-list {
+	padding: 0;
+}
+
+.planirovanie-list-container_style-2 .planirovanie-list:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.planirovanie-list-container_style-2 .planirovanie-item {
+	width: 219px;
+}
+
+#wrap #center .text img {
+	max-width: 100%;
+	height: auto;
+}
+
+.video {
+	margin: 30px 0;
+	width: calc(100% - 40px);
+	margin-left: 20px;
+}
+
+.video iframe {
+	max-width: 100%;
+}
+
+.vote-question-list input[type="text"] {
+	width: 100%;
+	max-width: 250px;
+	-webkit-appearance: none;
+	appearance: none;
+	border-radius: 0;
+}
+
+.reviews-reply-form input[type="text"] {
+	-webkit-appearance: none;
+	appearance: none;
+	border-radius: 0;
+}
+
+.calc{
+	margin-bottom: 25px;
+}
+
+.calc table{
+	width: 100%;
+	margin-top: 25px; 
+}
+	
+.calc table thead {
+	background-color: #f1f1f1;
+}
+
+.calc th {
+	border-color: #dae0e7;
+	padding-left: 1.117em;
+	border-width: 1px;
+	border-style: solid;
+	font-size: 1em;
+	padding: 0.462em 1em;
+	font-weight: normal;
+	vertical-align: middle;
+	border-top: 3px solid #e06d70;
+	color: #6b7279;
+}
+
+.calc td {
+	border-color: #c4ccd6;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-right-width: 1px;
+	border-right-style: solid;
+	vertical-align: top;
+	padding: 25px;
+	border-left-width: 1px;
+	border-left-style: solid;
+}
+
+.form_line{
+	background: #3253c8;
+	height: auto;
+	padding: 25px;
+	vertical-align: middle;
+}
+
+.form_line {
+	width: 100%;
+	box-sizing: border-box
+}
+
+.form_tit{
+	margin-top: -10px;
+}
+	
+.form_tit, .form{
+	float: left;
+	margin-right: 25px;
+}
+
+#day, #month, #year, #calcSubmit{
+	float: left;
+	margin-left: 10px;
+}
+
+.time_b, .form_tit{
+	color: #fff;
+}
+
+#calcSubmit, .calcSubmit{
+	margin-left: 25px;
+	background: #ffd000;
+	cursor: pointer;
+	padding: 10px;
+	margin-top: -10px;
+	color: #3253c8;
+}
+
+.form_line select{
+	border: none;
+	height: 36px;
+	margin-top: -10px;
+	border-radius: 0!important;
+	font-size: 14px;
+}
+
+.calc_desc{
+	width: 100%;
+}
+
+.calc_desc p {
+	margin: 25px 0; 
+}
+
+.calc_desc ul li{
+	margin:25px; 	
+}
+
+.calc_desc ul{
+	margin-left: 25px;
+}
+
+.save{
+	width: 190px;
+	margin: 0 auto;
+}
+
+.calcSubmit{
+	text-decoration: none;
+	text-align: center;
+}
+
+.calc_desc ul li {
+	list-style-type: disc;
+	color: #0a5192; 
+	font-size:25px;
+	line-height: 14px;
+}
+
+.calc_desc ul li span{
+   	color: #000;
+   	font-size:15px;
+}
+
+.calc_desc p b{
+	font-size: 18px;
+}
+
+.star{
+	color: #e3001a;
+}
+
+.calc tr td:nth-child(2){
+	width: 14%;
+}
+
+.bx-authform {
+	margin: 0 20px 25px 20px;
+	width: calc(100% - 40px);
+}
+
+div.forum-filter input.search-input,
+.forum-filter-field.search-input span.forum-filter-field-item {
+	width: 100%;
+	max-width: 400px;
+}
+
+.maps > ymaps {
+	max-width: 100%;
+}
+
+.home-banner .home-banner-link {
+	display: block;
+}
+
+.home-banner .home-banner-img {
+	max-width: 100%;
+	height: auto;
+}
+
+.home-banner-type-1 .home-banner-img,
+.home-banner-type-2 .home-banner-img,
+.home-banner-type-3 .home-banner-img,
+.home-banner-type-4 .home-banner-img {
+	display: none;
+}
+.soc_opros-container{display:none;}
+.calendar-beremennost .text-block{
+    padding: 0 40px 25px;
+}
+.calendar-beremennost .left-text{
+    display: inline-block;
+    vertical-align: top;
+    width: 320px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.calendar-beremennost .right-text{
+    display: inline-block;
+    vertical-align: top;
+    width: 500px;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.article-block{
+    padding: 0 0 0 15px;
+    font-size: 0;
+}
+.article-block > li{
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    font-size: initial;
+	margin-bottom: 35px;
+}
+.article-block li a{text-decoration: none;}
+.article-block > li:nth-child(2n-1){margin-right: 2%;}
+.article-block li .name_article-block{
+    background: #142238;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.article-block li .name_article-block a{
+	color: #fff;
+	display: block;
+    padding: 15px 20px;
+}
+
+.article-block li:hover .name_article-block{
+    background: #D43939;
+}
+.article-block li .img-block{
+    height: 320px;
+    overflow: hidden;
+}
+.article-block li .img-block img{    width: 100%;}
+.article-block li .title_article-block{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+    height: 40px;
+}
+.article-block li a:hover .title_article-block{color:#000;}
+.article-block li .artickle-list{}
+.article-block li .artickle-list li{margin-bottom: 15px;}
+.article-block li .artickle-list .artickle-list_img{
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+    height: 95px;
+    overflow: hidden;
+}
+.article-block li .artickle-list .artickle-list_img img{width: 100%;}
+.article-block li .artickle-list .artickle-list_text{
+    display: inline-block;
+    vertical-align: top;
+    width: 319px;
+    padding: 10px 0 5px 0;
+    margin-left: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    border-bottom: 2px solid #355BC8;
+}
+.article-block li .artickle-list li a:hover .artickle-list_text{
+    color:#000;
+    border-bottom: 2px solid #000;
+}
+.article-block li .more-articles{
+    display: block;
+    background: rgba(20, 34, 56, 0.3);
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 7px 0;
+}
+.article-block li .more-articles:hover{background: #355BC8;}
+.banner-w100{
+    display: block;
+    width: 100%;
+    padding: 0 1px 0 15px;
+    box-sizing: border-box;
+    margin: 20px 0;
+}
+.banner-w100 img{    width: 100%;}
+.v-mobile{display:none;}
+.v-mobile img{height: 300px;}
+
+.soc_opros-container{display:none;}
+.calendar-beremennost .text-block{
+    padding: 0 40px 25px;
+}
+.calendar-beremennost .left-text{
+	display: inline-block;
+    vertical-align: top;
+    width: 320px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.calendar-beremennost .right-text{
+	display: inline-block;
+    vertical-align: top;
+    width: 500px;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.article-block{
+	padding: 0 0 0 15px;
+    font-size: 0;
+}
+.article-block > li{
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    font-size: initial;
+}
+.article-block li a{text-decoration: none;}
+.article-block > li:nth-child(2n-1){margin-right: 2%;}
+.article-block li .name_article-block{
+    background: #142238;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.article-block li .name_article-block a{color: #fff;}
+.article-block li:hover .name_article-block{
+	background: #D43939;
+}
+.article-block li .img-block{
+    height: 320px;
+    overflow: hidden;
+}
+.article-block li .img-block img{    width: 100%;}
+.article-block li .title_article-block{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+	height: 40px;
+}
+.article-block li a:hover .title_article-block{color:#000;}
+.article-block li .artickle-list{}
+.article-block li .artickle-list li{margin-bottom: 15px;}
+.article-block li .artickle-list .artickle-list_img{
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+    height: 95px;
+    overflow: hidden;
+}
+.article-block li .artickle-list .artickle-list_img img{width: 100%;}
+.article-block li .artickle-list .artickle-list_text{
+    display: inline-block;
+    vertical-align: top;
+    width: 319px;
+    padding: 10px 0 5px 0;
+    margin-left: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    border-bottom: 2px solid #355BC8;
+}
+.article-block li .artickle-list li a:hover .artickle-list_text{
+	color:#000;
+	border-bottom: 2px solid #000;
+}
+.article-block li .more-articles{
+    display: block;
+    background: rgba(20, 34, 56, 0.3);
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 7px 0;
+}
+.article-block li .more-articles:hover{background: #355BC8;}
+.banner-w100{
+	display: block;
+    width: 100%;
+    padding: 0 1px 0 15px;
+    box-sizing: border-box;
+    margin: 20px 0;
+}
+
+.banner_helpbaby-xs {
+    display: none;
+}
+
+.banner-w100 img{    width: 100%;}
+.v-mobile{display:none;}
+.v-mobile img{height: 300px;}
+@media (max-width: 1199px) {
+	#header,
+	#header .top_ots,
+	#header .header_info,
+	.block_menu,
+	#wrap,
+	#footer,
+	#footer .main {
+		width: 1024px;
+	}
+	
+	#header .banners {
+		width: 1022px;
+	}
+
+.banner_helpbaby-xs {
+    display: none;
+}
+	
+	#header .header_info .logo {
+		margin-left: 15px;
+	}
+	
+	.header_info .logo img {
+		max-width: 252px;
+	}
+	
+	.header_right,
+	.top_menu ul {
+		padding-right: 15px;
+	}
+	
+	.header_calendar {
+		margin-right: 30px;
+	}
+	
+	.header_search,
+	.header_email {
+		margin-right: 20px;
+	}
+	
+	.block_menu .item,
+	.cvet,
+	.kat_name {
+		width: 146px;
+	}
+	
+	.kat_name p {
+		font-size: 13px;
+	}
+	
+	#wrap #center {
+		width: 828px;
+	}
+	
+	.aktual_index .aktual_index_item {
+		width: 192px;
+	}
+	
+	.calendar-beremennost .calendar .month > li:first-child {
+		margin-left: 50px;
+	}
+	
+	.calendar-beremennost .calendar .month > li {
+		padding-right: 20px;
+	}
+	
+	.jenskaya-konsultaciya-item {
+		width: 813px;
+	}
+	
+	.jenskaya-konsultaciya-item .img_item {
+		width: 420px;
+	}
+	
+	.spr_i_rey_gl,
+	.spr_i_rey_gl img {
+		width: 256px;
+	}
+	
+	.razvlechenie_maps,
+	.medicina_maps,
+	.obrazovanie_maps {
+		width: 808px;
+	}
+	
+	.medicina_maps .jenskaya_konsultaciya .block_text {
+		padding-left: 90px;
+		width: 240px;
+	}
+	
+	.razvlechenie_maps .kinoteatri .block_text {
+		width: 256px;
+	}
+	
+	.razvlechenie_maps .teatri {
+		right: 117px;
+	}
+	
+	.razvlechenie_maps .led_katki .block_text,
+	.razvlechenie_maps .torg_centr .block_text,
+	.razvlechenie_maps .teatri .block_text {
+		width: 235px;
+	}
+	
+	.razvlechenie_maps .torg_centr {
+		left: 230px;
+	}
+	
+	.razvlechenie_maps .led_katki {
+		right: 15px;
+	}
+	
+	.razvlechenie_maps .parki {
+		bottom: 112px;
+		right: 0;
+	}
+	
+	.jenskaya-konsultaciya-list {
+		width: 828px;
+	}
+	
+	.jenskaya-konsultaciya-list-item .img {
+		width: 336px;
+	}
+	
+	.planirovanie-item {
+		width: 192px;
+	}
+	
+	.contacts_p .maps {
+		width: 828px;
+	}
+	
+	.planirovanie-detail {
+		width: 818px;
+	}
+	
+	.planirovanie-list-container_style-2 {
+		width: 994px;
+	}
+	
+	.planirovanie-list-container_style-2 .planirovanie-item {
+		width: 183px;
+	}
+	
+	.magazine-list {
+		width: 801px;
+		margin-left: 15px;
+	}
+	
+	.contacts_p .block2 {
+		margin-left: 60px;
+	}
+	
+	.form_line {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	.form_tit,
+	.form {
+		margin-right: 20px;
+	}
+	
+	#calcSubmit,
+	.calcSubmit {
+		margin-left: 20px;
+	}
+	
+	.calc td {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	#footer .contakts {
+		width: 230px;
+	}
+	.calendar-beremennost .left-text{width: 30%;}
+	.calendar-beremennost .right-text{    width: 60%;}
+	.article-block li .artickle-list .artickle-list_text{width: 230px;}
+	.article-block li .img-block {height: 260px;}
+}
+
+.home-banner-type-2 {
+	margin-bottom: 20px;
+}
+
+@media (max-width: 1023px) {
+	.home-banner-type-1 .home-banner-img-tablet,
+	.home-banner-type-2 .home-banner-img-tablet,
+	.home-banner-type-3 .home-banner-img-tablet,
+	.home-banner-type-4 .home-banner-img-tablet {
+		display: block;
+	}
+
+.banner_helpbaby-xs {
+    width: 94%;
+    height: 275px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    z-index: 0;
+    display: block;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-color: #888888;
+    border-style: solid;
+}
+	
+	.home-banner-type-1,
+	.home-banner-type-2,
+	.home-banner-type-3,
+	.home-banner-type-4 {
+		margin: 20px 20px;
+		width: calc(100% - 40px);
+	}
+	
+	.home-banner-type-2:not(.home-banner-other-pages) {
+		margin-top: 10px;
+	}
+	
+	.home-banner-type-1:not(.home-banner-other-pages) {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	.home-banner-type-1.home-banner-other-pages {
+		margin-top: 0;
+	}
+	
+	#header,
+	#header .top_ots,
+	#header .header_info,
+	.block_menu,
+	#wrap,
+	#footer,
+	#footer .main {
+		width: 768px;
+	}
+	
+	#header .header_info {
+		position: relative;
+		padding-bottom: 3px;
+		border-bottom: 1px solid #dfdfdf;
+	}
+	
+	.mobile-menu-open {
+		display: block;
+	}
+	
+	.header_info .logo {
+		margin-top: 13px;
+	}
+	
+	.header_info .logo img {
+		max-width: 180px;
+	}
+	
+	.header_right {
+		padding-top: 7px;
+		padding-right: 12px;
+	}
+	
+	.header_calendar {
+		margin-right: 71px;
+		padding-left: 39px;
+	}
+	
+	.header_socials {
+		/*display: none;*/
+		margin-right: 20px;
+	}
+	
+	.header_email {
+		padding-top: 8px;
+display: none;
+	}
+	
+	.header_search {
+		float: right;
+		width: auto;
+		margin-right: 0;
+	}
+
+	.header_search input[type="text"] {
+		position: absolute;
+		top: 1px;
+		right: -6px;
+		width: 225px;
+		border: 1px solid #c8c8c8;
+		visibility: hidden;
+		opacity: 0;
+		padding-right: 25px;
+	}
+	
+	.header_search .ico_seach {
+		background-image: url('/bitrix/templates/babytoday/img/search.png');
+		width: 16px;
+		height: 17px;
+		right: 0;
+	}
+	
+	.header_search .seach_block.open input[type="text"] {
+		visibility: visible;
+		opacity: 1;
+	}
+	
+	.header_search .seach_block.open .ico_seach {
+		background: url('/bitrix/templates/babytoday/img/search-muted.png');
+	}
+	
+	.header_search .seach_block .ico_seach:focus {
+		outline: 0;
+	}
+	
+	.top_menu,
+	.block_menu,
+	.ps_banner {
+		display: none;
+	}
+	
+	.aktual_index {
+		width: 728px;
+		margin-left: 20px;
+	}
+	
+	.aktual_index .aktual_index_item:first-child {
+		width: 366px;
+		height: 262px;
+	}
+	
+	.aktual_index .aktual_index_item {
+		width: 181px;
+		height: 131px;
+	}
+	
+	#wrap #center {
+		width: 100%;
+		float: none;
+		margin-top: 0;
+		padding-top: 25px;
+	}
+	
+	#wrap #right {
+		display: none;
+		float: none;
+	}
+	
+	.articles-categories,
+	.popular-articles,
+	.calendar-beremennost_style-1 h2 {
+		display: block;
+	}
+	
+	.calendar-beremennost_style-1 .calendar {
+		/*height: 242px;*/
+	}
+	
+	.calendar-beremennost .calendar .month > li:first-child {
+		margin-left: 45px;
+	}
+	
+	.calendar-beremennost .calendar .month > li {
+		margin-right: 20px;
+		padding-right: 10px;
+	}
+	
+	.soc_opros-container {
+		margin: 0 20px 40px 20px;
+	}
+	
+	.planirovanie-detail {
+		width: 756px;
+	}
+	
+	#wrap #center .text {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	.menu_top_razdel {
+		margin: 10px 20px 10px 20px;
+	}
+	
+	.planirovanie-list {
+		padding: 0 20px;
+		margin-bottom: 15px;
+	}
+	
+	.planirovanie-list:after {
+		content: '';
+		clear: both;
+		display: table;
+	}
+	
+	.planirovanie-item {
+		margin-right: 7px;
+		margin-bottom: 7px;
+		width: 226px;
+	}
+	
+	.planirovanie-item:nth-child(3n) {
+		margin-right: 0;
+	}
+	
+	.bx_sitemap_ul:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+	
+	.bx_sitemap_ul {
+		padding: 0 20px;
+	}
+	
+	.spr_i_rey_gl {
+		margin-right: 20px;
+		margin-left: 0;
+	}
+	
+	.spr_i_rey_gl,
+	.spr_i_rey_gl img {
+		width: 229px;
+	}
+	
+	.spr_i_rey_gl:nth-child(3n) {
+		margin-right: 0;
+	}
+	
+	.razvlechenie_maps,
+	.medicina_maps,
+	.obrazovanie_maps {
+		width: 728px;
+	}
+	
+	.razvlechenie_maps,
+	.medicina_maps,
+	.obrazovanie_maps {
+		margin: 10px 0;
+		height: 380px;
+	}
+	
+	.medicina_maps .kliniki {
+		top: 0; right: 119px;
+		height: 103px;
+		width: 204px;
+	}
+	
+	.medicina_maps .kliniki .block_text {
+		margin-top: 42px;
+		width: 204px;
+		height: 50px;
+		padding-top: 15px;
+		padding-left: 76px;
+		font-size: 13px;
+	}
+	
+	.medicina_maps .kliniki .block_text .block_img {
+		top: -24px;
+		left: 3px;
+	}
+	
+	.medicina_maps .kliniki .block_img img {
+		width: 72px;
+		height: auto;
+	}
+	
+	.medicina_maps .jenskaya_konsultaciya {
+		top: 38px;
+		left: 59px;
+		width: 204px;
+		height: 49px;
+	}
+	
+	.medicina_maps .jenskaya_konsultaciya .block_text {
+		font-size: 13px;
+		line-height: 14px;
+		width: 204px;
+		height: 49px;
+	}
+	
+	.medicina_maps .jenskaya_konsultaciya .block_text .block_img {
+	    top: -40px;
+	    left: 16px;
+	}
+	
+	.medicina_maps .jenskaya_konsultaciya .block_img img {
+		width: 35px;
+		height: auto;
+	}
+	
+	.medicina_maps .med_centri {
+		right: 6px;
+		bottom: 190px;
+		height: 103px;
+		width: 205px;
+	}
+	
+	.medicina_maps .med_centri .block_text {
+		height: 50px;
+		width: 205px;
+		padding-left: 89px;
+		font-size: 13px;
+		line-height: 14px;
+	}
+	
+	.medicina_maps .med_centri .block_text .block_img {
+		top: -11px;
+	}
+	
+	.medicina_maps .med_centri .block_img img {
+		width: 70px;
+		height: auto;
+	}
+	
+	.medicina_maps .rod_dom {
+		left: 303px;
+		bottom: 104px;
+		height: 103px;
+		width: 205px;
+	}
+	
+	.medicina_maps .rod_dom .block_text {
+		height: 50px;
+		width: 205px;
+		padding-top: 14px;
+		padding-left: 81px;
+		font-size: 13px;
+	}
+	
+	.medicina_maps .rod_dom .block_text .block_img {
+		top: -36px;
+		left: 16px;
+	}
+	
+	.medicina_maps .rod_dom .block_img img {
+		width: 64px;
+		height: auto;
+	}
+	
+	.medicina_maps .bol {
+	    bottom: 20px;
+		right: 52px;
+    }
+	
+	.medicina_maps .bol,
+	.medicina_maps .bol .block_text {
+		width: 205px;
+	}
+	
+	.medicina_maps .bol .block_text {
+		height: 50px;	
+	}
+    
+    .medicina_maps .bol .block_text .block_img {
+	    top: -14px;
+	    left: 16px;
+    }
+    
+    .medicina_maps .bol .block_img img {
+	    width: 71px;
+	    height: auto;
+    }
+    
+    .medicina_maps .bol .block_text {
+	    padding-top: 14px;
+	    padding-left: 91px;
+	    font-size: 13px;
+    }
+    
+    .medicina_maps .policlinika {
+	    height: 50px;
+	    width: 205px;
+	    left: 58px;
+	    bottom: 66px;
+    }
+    
+    .medicina_maps .policlinika,
+    .medicina_maps .policlinika .block_text {
+	    width: 205px;
+    }
+	
+	.medicina_maps .policlinika .block_text {
+		height: 50px;
+	    padding-left: 91px;
+		padding-top: 15px;
+		font-size: 13px;
+	}
+	
+	.medicina_maps .policlinika .block_text .block_img {
+		top: -28px;
+		left: 18px
+	}
+	
+	.medicina_maps .policlinika .block_img img {
+		width: 56px;
+		height: auto;
+	}
+	
+	.obrazovanie_maps .school,
+	.obrazovanie_maps .school .block_text,
+	.obrazovanie_maps .razv_centr,
+	.obrazovanie_maps .razv_centr .block_text,
+	.obrazovanie_maps .det_sad,
+	.obrazovanie_maps .det_sad .block_text,
+	.razvlechenie_maps .kinoteatri,
+	.razvlechenie_maps .kinoteatri .block_text,
+	.razvlechenie_maps .teatri,
+	.razvlechenie_maps .teatri .block_text,
+	.razvlechenie_maps .led_katki,
+	.razvlechenie_maps .led_katki .block_text,
+	.razvlechenie_maps .torg_centr,
+	.razvlechenie_maps .torg_centr .block_text,
+	.razvlechenie_maps .baseini,
+	.razvlechenie_maps .baseini .block_text,
+	.razvlechenie_maps .parki,
+	.razvlechenie_maps .parki .block_text,
+	.razvlechenie_maps .sport_com,
+	.razvlechenie_maps .sport_com .block_text {
+		width: 205px;
+	}
+	
+	.obrazovanie_maps .school .block_text,
+	.obrazovanie_maps .razv_centr .block_text,
+	.obrazovanie_maps .det_sad .block_text,
+	.razvlechenie_maps .kinoteatri .block_text,
+	.razvlechenie_maps .teatri .block_text,
+	.razvlechenie_maps .led_katki .block_text,
+	.razvlechenie_maps .torg_centr .block_text,
+	.razvlechenie_maps .baseini .block_text,
+	.razvlechenie_maps .parki .block_text,
+	.razvlechenie_maps .sport_com .block_text {
+		height: 50px;
+		padding-top: 14px;
+	    padding-left: 91px;
+	    font-size: 13px;
+	}
+	
+	.obrazovanie_maps .razv_centr .block_text,
+	.razvlechenie_maps .led_katki .block_text,
+	.razvlechenie_maps .torg_centr .block_text,
+	.razvlechenie_maps .sport_com .block_text {
+		padding-top: 10px;
+		line-height: 14px;
+	}
+	
+	.obrazovanie_maps .razv_centr .block_text .block_img {
+		top: -28px;
+		left: 13px;
+	}
+	
+	.obrazovanie_maps .razv_centr .block_img img {
+		width: 100px;
+		height: auto;
+	}
+	
+	.obrazovanie_maps .det_sad {
+		right: 160px;
+	}
+	
+	.obrazovanie_maps .det_sad .block_text .block_img {
+	    top: -26px;
+	    left: 8px;
+	}
+	
+	.obrazovanie_maps .det_sad .block_img img {
+		width: 70px;
+		height: auto;
+	}
+	
+	.obrazovanie_maps .school .block_text .block_img {
+		top: -19px;
+		left: 15px;
+	}
+	
+	.obrazovanie_maps .school .block_text {
+		padding-left: 110px;
+	}
+	
+	.obrazovanie_maps .school .block_img img {
+		width: 78px;
+		height: auto;
+	}
+	
+	.razvlechenie_maps .teatri .block_img img,
+	.razvlechenie_maps .kinoteatri .block_img img,
+	.razvlechenie_maps .led_katki .block_img img,
+	.razvlechenie_maps .sport_com .block_img img {
+		width: 70px;
+		height: auto;
+	}
+	
+	.razvlechenie_maps .teatri {
+		top: -30px;
+	}
+	
+	.razvlechenie_maps .teatri .block_text .block_img {
+		top: -15px;
+		left: 8px;
+	}
+	
+	.razvlechenie_maps .kinoteatri .block_text .block_img {
+	    position: absolute;
+	    top: -20px;
+	    left: 8px;
+	}
+	
+	.razvlechenie_maps .torg_centr {
+		left: 260px;
+	}
+	
+	.razvlechenie_maps .torg_centr .block_img img {
+		width: 59px;
+		height: auto;
+	}
+	
+	.razvlechenie_maps .torg_centr .block_text .block_img {
+	    position: absolute;
+	    top: -18px;
+	    left: 15px;
+	}
+	
+	.razvlechenie_maps .led_katki {
+		top: 70px;
+	}
+	
+	.razvlechenie_maps .led_katki .block_text .block_img {
+	    position: absolute;
+	    top: -33px;
+	    left: 14px;
+	}
+	
+	.razvlechenie_maps .baseini .block_text .block_img {
+	    position: absolute;
+	    top: -8px;
+	    left: 3px;
+	}
+	
+	.razvlechenie_maps .baseini .block_img img {
+		width: 87px;
+		height: auto;
+	}
+	
+	.razvlechenie_maps .parki {
+		right: 25px;
+		bottom: 85px;
+	}
+	
+	.razvlechenie_maps .parki .block_text .block_img {
+	    position: absolute;
+	    top: -30px;
+	    left: -5px;
+	}
+	
+	.razvlechenie_maps .parki .block_img img {
+		width: 80px;
+		height: auto;
+	}
+	
+	.razvlechenie_maps .sport_com .block_text .block_img {
+	    position: absolute;
+	    top: -25px;
+	    left: 7px;
+	}
+	
+	.jenskaya-konsultaciya-item {
+		width: 738px;
+	}
+	
+	.magazine-list {
+		width: 718px;
+		margin-left: 20px;
+	}
+	
+	.jenskaya-konsultaciya-list {
+		width: 728px;
+		margin-left: 20px;
+	}
+	
+	.jenskaya-konsultaciya-list-item .img {
+		width: 402px;
+	}
+	
+	.jenskaya-konsultaciya-item .img_item {
+	    width: 345px;
+	}
+	
+	.jenskaya-konsultaciya-list-item .item-block-right {
+		width: 294px;
+	}
+	
+	
+	.jenskaya-konsultaciya-list-item .podrobnee {
+		position: static;
+	}
+	
+	.bx-breadcrumb {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	
+	.contacts_p .maps {
+		width: 728px;
+	}
+
+	.contacts_p .block1,
+	.contacts_p .block2 {
+		width: calc(100% - 40px);
+	}
+	
+	.contacts_p .block1,
+	.contacts_p .block2 {
+		margin-left: 20px;
+		margin-bottom: 30px;
+	}
+	
+	.contacts_p .phone_c,
+	.contacts_p .adress_c,
+	.contacts_p .email_c {
+		margin-left: 0;
+	}
+	
+	.planirovanie-detail {
+		width: 718px;
+		margin-left: 20px;
+	}
+	
+	.planirovanie-list-container_style-2 {
+		width: 728px;
+		margin: 0 20px;
+		padding: 0;
+	}
+	
+	.planirovanie-list-container_style-2 .planirovanie-item {
+		width: 226px;
+	}
+	
+	.form_line .time_b {
+		margin-top: -10px;
+	}
+	
+	#footer {
+		padding-top: 13px;
+	}
+	
+	#footer .main {
+		height: auto;
+		border-top: 1px solid #c8c8c8;
+		padding-bottom: 27px;
+	}
+
+	#footer .main .footer_logo-container {
+		width: 362px;
+		margin-top: 25px;
+		margin-left: 20px;
+	}
+	
+	#footer .main .footer_logo {
+		margin-bottom: 10px;
+	}
+	
+	#footer .contakts {
+		width: 258px;
+		margin-left: 20px;
+	}
+	
+	#footer .menu_footer {
+		width: 100%;
+		margin-top: 20px;
+	}
+	
+	#footer .menu_footer ul li,
+	#footer .social_footer {
+		margin-left: 20px;
+	}
+	
+	#footer .menu_footer ul li {
+		margin-top: 6px;
+	}
+	
+	#footer .social_footer {
+		margin-top: 0;
+	}
+	
+	#footer .social_footer a {
+		line-height: 1;
+		vertical-align: middle;
+	}
+	
+	#footer .menu_footer .cl {
+		display: none;
+	}
+	.article-block{    padding: 0 15px 0 15px;}
+	.article-block li .img-block{height: 240px;}
+	.article-block li .artickle-list .artickle-list_text{width: 190px;}
+	.banner-w100{padding:0 15px;}
+}
+
+@media (max-width: 767px) {
+	#header,
+	#header .top_ots,
+	#header .header_info,
+	.block_menu,
+	#wrap,
+	#footer,
+	#footer .main {
+		width: 640px;
+	}
+	
+	#wrap #center h1:not(.h1_s) {
+		margin-left: 15px;
+		margin-right: 15px;
+		margin-top: 19px;
+	}
+	
+	.mobile-menu-open {
+		margin-left: 15px;
+	}
+	
+	#header .header_info .logo {
+		margin-left: 15px;
+		margin-bottom: 2px;
+	}
+	
+	.header_calendar {
+		margin-right: 30px;
+	}
+	
+	.contacts_header .email {
+		width: 138px;
+		margin-left: 30px;
+	}
+	
+	.calendar-pregnancy-ico {
+		margin-left: 50px;
+	}
+	
+	.jenskaya-konsultaciya-item {
+		width: 610px;
+	}
+	
+	.jenskaya-konsultaciya-item .img_item,
+	.jenskaya-konsultaciya-item .maps {
+		width: 100%;
+	}
+	
+	.jenskaya-konsultaciya-item .img_item {
+		margin-bottom: 30px;
+	}
+	
+	.jenskaya-konsultaciya-item .maps {
+		margin-left: 0;
+	}
+	
+	.header_info .right_block .seach_block {
+		margin-right: 17px;
+	}
+	
+	.aktual_index {
+		margin-left: 15px;
+		width: 610px;
+	}
+	
+	.aktual_index .aktual_index_item {
+		width: 50%;
+		height: 116px;
+	}
+	
+	.aktual_index .aktual_index_item:first-child {
+		width: 100%;
+		height: 309px;
+	}
+	
+	.articles-categories {
+		padding: 0 15px;
+	}
+	
+	.calendar-beremennost_style-1 h2 {
+		margin-left: 15px;
+	}
+	
+	.calendar-beremennost .calendar .month > li {
+		margin-right: 5px;
+		padding-right: 0;
+	}
+	
+	.calendar-beremennost .calendar .month > li:first-child {
+		margin-left: 20px;
+	}
+	
+	.calendar-beremennost .calendar .month > li:last-child {
+		margin-right: 0;
+	}
+	
+	#wrap #center .text {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
+	div#wrap div.text ul li,
+	div#wrap div.text ol li {
+		margin-left: 15px;
+	}
+	
+	.soc_opros-container {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	
+	.popular-articles {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	
+	.menu_top_razdel {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	
+	.planirovanie-list {
+		padding: 0 15px;
+	}
+	
+	.planirovanie-item {
+		width: 288px;
+	}
+	
+	.planirovanie-item:nth-child(3n) {
+		margin-right: 7px;
+	}
+	
+	.planirovanie-item:nth-child(2n) {
+		margin-right: 0;
+	}
+	
+	.spr_i_rey_gl:nth-child(3n) {
+	    margin-right: 20px;
+	}
+	
+	.spr_i_rey_gl:nth-child(2n) {
+	    margin-right: 0;
+	}
+	
+	.bx_sitemap_ul {
+		padding: 0 15px;
+	}
+	
+	.spr_i_rey_gl,
+	.spr_i_rey_gl img {
+	    width: 295px;
+	}
+	
+	.razvlechenie_maps,
+	.medicina_maps,
+	.obrazovanie_maps {
+		width: 610px;
+	}
+	
+	.medicina_maps .rod_dom {
+	    left: 150px;
+	    bottom: 120px;
+	    height: 103px;
+	    width: 205px;
+	}
+	
+	.medicina_maps .med_centri {
+		right: 15px;
+	}
+	
+	.razvlechenie_maps .sport_com {
+		bottom: 10px;
+		left: 70px;
+	}
+	
+	.razvlechenie_maps .parki {
+	    right: 25px;
+	    bottom: 24px;
+	}
+	
+	.obrazovanie_maps .razv_centr {
+		left: 75px;
+	}
+	
+	.obrazovanie_maps .det_sad {
+		right: 58px;
+	}
+	
+	.jenskaya-konsultaciya-list {
+		margin-left: 15px;
+		width: 610px;
+	}
+	
+	.jenskaya-konsultaciya-list-item .img {
+		width: 300px;
+	}
+	
+	.jenskaya-konsultaciya-list-item .item-block-right {
+		width: 276px;
+	}
+	
+	.kalendar_bottom_text ul li {
+		margin-left: 15px
+	}
+	
+	.reviews-reply-form,
+	.calendar-beremennost .content-calendar {
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+	
+	.kalendar_bottom_text {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	
+	#wrap #center .calendar-beremennost .content-calendar .tabs > div .text li {
+		padding-left: 15px;
+	}
+	
+	.planirovanie-detail {
+		margin-left: 15px;
+		width: 599px;
+	}
+	
+	.planirovanie-list-container_style-2 {
+		margin: 0 15px;
+		width: 610px;
+	}
+	
+	.planirovanie-list-container_style-2 .planirovanie-item {
+		width: 288px;
+	}
+	
+	#wrap #center h1:not(.h1_s) {
+		margin-left: 15px;
+		margin-right: 15px;
+		margin-top: 19px;
+	}
+	
+	#wrap #center .h1_s {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
+	.magazine-list {
+		margin-left: 15px;
+		width: 599px;
+	}
+	
+	.magazine-item img {
+		display: block;
+		max-width: 100%;
+		margin-bottom: 30px;
+		float: none !important;
+	}
+
+	.magazine-item .news-date-time {
+		display: block;
+	}
+	
+	.magazine-item a {
+		display: inline-block;
+	}
+	
+	.contacts_p .maps {
+		width: calc(100% - 30px);
+		margin-left: 15px;
+		margin-right: 0;
+	}
+	
+	.video {
+		width: calc(100% - 30px);
+		margin-left: 15px;
+	}
+	
+	.video iframe {
+		height: 330px;
+	}
+	
+	.time_b,
+	.form_tit,
+	.form {
+		float: none;
+	}
+	
+	.form form:after {
+		content: '';
+		clear: both;
+		display: table;
+	}
+	
+	.form_line select,
+	.form_tit,
+	.form_line .time_b,
+	#calcSubmit,
+	.calcSubmit {
+		margin-top: 0;
+	}
+	
+	.form_tit,
+	.form {
+		margin-bottom: 20px;
+	}
+	
+	.form #day {
+		margin-left: 0;
+	}
+	
+	.bx-authform {
+		margin: 0 15px 25px 15px;
+		width: calc(100% - 30px);
+	}
+	
+	#footer .main .footer_logo-container {
+		width: 320px;
+		margin-left: 15px;
+	}
+	
+	#footer .menu_footer ul li,
+	#footer .social_footer {
+		margin-left: 15px;
+	}
+	
+	#footer .contakts {
+		width: 250px;
+	}
+	.article-block li .artickle-list .artickle-list_img{
+		width: 80px;
+		height: 50px;
+	}
+	.article-block li .artickle-list .artickle-list_text{
+		padding-top: 0;
+	}
+	.article-block li .img-block{height: 200px;}
+}
+
+@media (max-width: 639px) {
+	#header,
+	#header .top_ots,
+	#header .header_info,
+	.block_menu,
+	#wrap,
+	#footer,
+	#footer .main,
+	.aktual_index,
+	.planirovanie-item {
+		width: 100%;
+	}
+	
+	.aktual_index,
+	#footer .contakts,
+	#footer .main .footer_logo-container,
+	.jenskaya-konsultaciya-list,
+	.planirovanie-list-container_style-2,
+	.planirovanie-detail,
+	.magazine-list,
+	.reviews-reply-form,
+	.reviews-block-container.reviews-reviews-block-container,
+	.jenskaya-konsultaciya-item {
+		margin-right: 15px;
+		margin-left: 15px;
+		width: calc(100% - 30px);
+	}
+	
+	.reviews-reply-form.form_new_com .reviews-reply-field span {
+		float: none !important;
+		width: 100%;
+	}
+	
+	.reviews-reply-form input[type="text"] {
+		width: 100%;
+	}
+	
+	.planirovanie-item,
+	.planirovanie-detail,
+	.magazine-list,
+	.jenskaya-konsultaciya-item {
+		box-sizing: border-box;
+	}
+	
+	.jenskaya-konsultaciya-item .info {
+		padding-left: 0;
+	}
+	
+	.bx_item_detail .item_info_section {
+		padding-left: 0;
+	}
+	
+	.jenskaya-konsultaciya-item .reviews-reply-form {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	#header .header_info {
+		padding-bottom: 0;
+	}
+	
+	#header .header_info:after {
+		content: '';
+		clear: both;
+		display: table;
+	}
+	
+	#header .header_info .logo {
+		margin-bottom: 9px;
+	}
+	
+	#header .header_info .contacts_header {
+		float: left;
+		width: 100%;
+		padding-top: 2px;
+		padding-bottom: 10px;
+		border-top: 1px solid #dfdfdf;
+	}
+	
+	.contacts_header .email {
+		margin-left: 15px;
+	}
+	
+	.header_right {
+		width: 100%;
+		padding-left: 15px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-top: 1px solid #dfdfdf;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	
+	.header_search {
+		position: absolute;
+		top: 10px;
+		right: 15px;
+	}
+	
+	.header_info .right_block {
+		position: absolute;
+		right: 17px;
+	}
+	
+	.articles-categories li {
+		width: 100%;
+	}
+	
+	.calendar-beremennost .calendar .month > li {
+		display: block;
+		margin: 0 auto 24px auto;
+		padding: 0;
+	}
+	
+	.calendar-beremennost .calendar .month > li:first-child,
+	.calendar-beremennost .calendar .month > li:last-child {
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+	.calendar-beremennost .calendar .month > li:last-child {
+		margin-bottom: 0;
+	}
+	
+	.calendar-beremennost .calendar,
+	.calendar-beremennost_style-1 .calendar {
+		height: auto;
+	}
+	
+	.popular-articles .article-preview {
+		width: 100%;
+	}
+	
+	.mobile-menu-nav {
+		padding: 0;
+		margin: 0;
+	}
+	
+	.mobile-menu-nav li {
+		padding: 0;
+	}
+	
+	.mobile-menu-title-container {
+		padding: 7px 75px;
+	}
+	
+	.mobile-menu-back {
+		left: 15px;
+	}
+	
+	.mobile-menu-nav li {
+		width: 100%;
+	}
+	
+	#wrap #center .text img {
+		float: none !important;
+	}
+	
+	.menu_top_razdel li {
+		display: block;
+	}
+	
+	.spr_i_rey_gl {
+		margin-right: 0;
+	}
+	
+	.spr_i_rey_gl,
+	.spr_i_rey_gl img {
+		width: 100%;
+	}
+	
+	.spr_i_rey_gl:nth-child(3n) {
+		margin-right: 0;
+	}
+	
+	.spr_i_rey_gl .podrobnee {
+		position: static;
+		margin-top: 20px;
+		float: right;
+	}
+	
+	.jenskaya-konsultaciya-list-item .img {
+		display: none;
+	}
+	
+	.jenskaya-konsultaciya-list-item .item-block-right {
+		width: calc(100% - 20px);
+	}
+	
+	.razvlechenie_maps,
+	.medicina_maps,
+	.obrazovanie_maps {
+		display: none;
+	}
+	
+	.consultation-categories {
+		display: block;
+	}
+	
+	.planirovanie-list-container_style-2 .planirovanie-item {
+		width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	
+	.planirovanie-detail .foto {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	
+	.planirovanie-detail .img {
+		width: calc(100% - 20px);
+		margin-left: 0;
+	}
+	
+	.form_new_com .reviews-reply-buttons {
+		padding-top: 30px;
+	}
+	
+	div.reviews-reply-field-author,
+	div.reviews-reply-field-email {
+		width: 100%;
+	}
+	
+	div.reviews-reply-field-author input,
+	div.reviews-reply-field-email input {
+		box-sizing: border-box
+	}
+	
+	div.reviews-reply-field-user-sep {
+		display: none;
+	}
+	
+	.contacts_p .block1
+	.contacts_p .block2,
+	.contacts_p .block3 {
+		margin-left: 15px;
+		width: calc(100% - 30px);
+	}
+	
+	.contacts_p .block3 {
+		text-align: left;
+	}
+	
+	.contacts_p .phone_c,
+	.contacts_p .adress_c,
+	.contacts_p .email_c {
+		margin-bottom: 15px;
+	}
+	
+	table.forum-post-table,
+	table.forum-post-table > tbody,
+	table.forum-post-table > tbody > tr,
+	table.forum-post-table > tbody > tr > th,
+	table.forum-post-table > tbody > tr > td,
+	table.forum-post-table > tfoot,
+	table.forum-post-table > tfoot > tr,
+	table.forum-post-table > tfoot > tr > th,
+	table.forum-post-table > tfoot > tr > td {
+		display: block;
+	}
+	
+	table.forum-post-table td.forum-cell-user,
+	table.forum-post-table td.forum-cell-contact {
+		width: 100%;
+	}
+	
+	table.forum-table th.forum-column-topics,
+	table.forum-table th.forum-column-replies,
+	table.forum-table th.forum-column-views,
+	table.forum-table th.forum-column-lastpost,
+	table.forum-table td.forum-column-topics,
+	table.forum-table td.forum-column-replies,
+	table.forum-table td.forum-column-views,
+	table.forum-table td.forum-column-lastpost,
+	table.forum-table td.forum-column-icon {
+		display: none;
+	}
+	
+	.form_line {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
+	.forum-column-footer {
+		box-sizing: border-box;
+	}
+	
+	.calc table,
+	.calc thead,
+	.calc tbody,
+	.calc tr,
+	.calc th,
+	.calc td {
+		display: block;
+	}
+	
+	.calc td {
+		padding: 15px;
+		border-left: none;
+		border-right: none;
+	}
+	
+	.calc td:empty {
+		display: none;
+	}
+	
+	.calc tr td:nth-child(2) {
+		width: 100%;
+	}
+	
+	div.forum-filter input.search-input,
+	.forum-filter-field.search-input span.forum-filter-field-item {
+		max-width: 246px;
+	}
+	
+	#footer .menu_footer ul:after {
+		content: '';
+		clear: both;
+		display: table;
+	}
+	
+	#footer .social_footer {
+		padding-top: 20px;
+		float: none;
+	}
+	.article-block > li{
+		width:100%;
+		margin-right:0!important;
+		margin-bottom: 20px;
+	}
+	.article-block li .artickle-list .artickle-list_img{
+		width: 20%;
+		height: auto;
+	}
+	.article-block li .artickle-list .artickle-list_text{
+		width: 70%;
+		padding-top: 10px;
+	}
+	.article-block li .img-block{height: auto;}
+}
+
+@media (max-width: 480px) {
+	.form_tit,
+	.form {
+		margin-right: 0
+	}
+
+.banner_helpbaby-xs {
+    width: 92%;
+    height: 205px;
+}
+	
+	.form_line #day,
+	.form_line #month,
+	.form_line #year,
+	.form_line #calcSubmit {
+		display: block;
+		float: none;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	
+	.form_line #day,
+	.form_line #month,
+	.form_line #year {
+		width: 100%;
+	}
+	
+	.form_line #calcSubmit {
+		margin-bottom: 0;
+		display: inline-block;
+	}
+	
+	div.forum-header-options {
+		float: none
+	}
+	
+	.forum-user-information .forum-user-hide-action {
+		float: none !important;
+		margin-bottom: 20px;
+	}
+	
+	.bx-authform.block_auth {
+		margin-left: 15px;
+		margin-right: 0;
+	}
+	.article-block li .artickle-list .artickle-list_text{
+		padding-top:0;
+	}
+}
+
+@media (max-width: 425px) {
+	.home-banner-type-1,
+	.home-banner-type-2,
+	.home-banner-type-3,
+	.home-banner-type-4 {
+		margin-left: 15px;
+		margin-right: 15px;
+		width: calc(100% - 30px);
+	}
+	
+	.home-banner .home-banner-img {
+		width: 100%;
+	}
+	
+	.home-banner-type-1 .home-banner-img-tablet,
+	.home-banner-type-2 .home-banner-img-tablet,
+	.home-banner-type-3 .home-banner-img-tablet,
+	.home-banner-type-4 .home-banner-img-tablet {
+		display: none;
+	}
+	
+	.home-banner-type-1 .home-banner-img-mobile,
+	.home-banner-type-2 .home-banner-img-mobile,
+	.home-banner-type-3 .home-banner-img-mobile,
+	.home-banner-type-4 .home-banner-img-mobile {
+		display: block;
+	}
+	.v-desktop{display:none;}
+	.v-mobile{display:block;}
+}
+
+.block-copyright {
+			font-size: 8pt;
+			padding: 10px 10px;
+		}
+
+.article-block > li:nth-child(1) > div {
+	background: rgba(154, 186, 42, 0.7);
+}
+
+.article-block > li:nth-child(1):hover > div {
+	background: rgba(0, 143, 69, 1);
+}
+
+.article-block > li:nth-child(2) > div {
+	background: rgba(255, 122, 142, 0.7);
+}
+
+.article-block > li:nth-child(2):hover > div {
+	background: rgba(227, 30, 36, 1);
+}
+
+.article-block > li:nth-child(3) > div {
+	background: rgba(53, 90, 200, 0.7);
+}
+
+.article-block > li:nth-child(3):hover > div {
+	background: rgba(8, 90, 204, 1);
+}
+
+.article-block > li:nth-child(4) > div {
+	background: rgba(223, 175, 41, 0.7);
+}
+
+.article-block > li:nth-child(4):hover > div {
+	background: rgba(255, 204, 0, 1);
+}
+
+.slider-tablet {
+	display: none;
+}
+.slider-mobile {
+	display: none;
+}
+
+@media (max-width: 1020px) {
+	.slider-tablet {
+		display: block;
+		margin: 10px 20px;
+	}
+	.slider-mobile {
+		display: none;
+	}
+}
+
+@media (max-width: 425px) {
+	.slider-tablet {
+		display: none;
+	}
+	.slider-mobile {
+		display: block;
+		margin: 10px 15px;
+	}
+}
+
+.share {
+	display: inline-block;
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.share a, .shareIcon {
+	display: inline-block;
+	background-size: cover;
+	height: 30px;
+	width: 31px;
+	margin: 0;
+}
+
+.share a {
+	background-image: url("/bitrix/templates/babytoday/img/socicons.png");
+	cursor: pointer;
+}
+
+.shareIcon {
+	background-image: url("/bitrix/templates/babytoday/img/shareicon.png");
+}
+
+.share .vk {background-position-x: 0px;}
+.share .facebook {background-position-x: -31px;}
+.share .mailru {background-position-x: -63px;}
+.share .odnoklassniki {background-position-x: -94px;}
+.share .twitter {background-position-x: -126px;}
+.share .googleplus {background-position-x: -157px;}
+.share .telegram {background-position-x: -188px;}
+.share .whatsapp {background-position-x: -219px;}
+.share .viber {background-position-x: -250px;}
+
+@media (max-width: 425px) {
+	.share {
+		margin-left: 3px;
+		margin-right: 3px;
+	}
+	.shareIcon {
+		display: none;
+	}
+
+.banner_helpbaby-xs {
+    width: 90%;
+    height: 134px;
+}
+}
+
+.article * {
+	font-size: 14px;
+}
+
+div#wrap #center h1.article__heading {
+	text-align: left;
+	font-weight: bold !important;
+	font-size: 30px !important;
+	margin: 0;
+	padding: 20px 0;
+	border-bottom: 1px solid #D3D3D3;
+}
+
+.article__metadata {
+    display: flex;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.article__metadata > div {
+	display: flex;
+	align-items: center;
+}
+
+.article__date {
+	margin-right: auto;
+}
+
+.article__metadata svg {
+	margin-right: 7px;
+}
+
+.article__comments {
+	margin-left: 20px;
+}
+
+.article__comments svg {
+	transform: translateY(1px);
+}
+
+.article__lead {
+	display: flex;
+	margin-top: 20px;
+}
+
+.article__lead-img-box {
+	max-width: 500px;
+    flex: 0 1 40%;
+    margin-right: 20px;
+}
+
+.article__lead-img {
+	display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.article__toc {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.article__toc-link {
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.article__toc-link:not(:last-child) {
+	margin-bottom: 12px;
+}
+
+.article__toc-link::before {
+	content: '>';
+	color: #18B0D5;
+	margin-right: 10px;
+	font-weight: normal;
+}
+
+.article__heading-secondary {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 20px;
+	color: #18B0D5;
+	padding: 20px 0;
+	border-bottom: 1px solid #D3D3D3;
+	margin: 15px 0;
+}
+
+.article__text,
+.article__ul {
+	line-height: 20px;
+}
+
+.article__ul li {
+	margin-left: 20px;
+}
+
+.article__ul li::before {
+	color: rgb(7, 74, 136);
+    content: "•";
+    padding-right: 6px;
+    font-size: 20px;
+}
+
+.article__img-box {
+	margin-bottom: 15px;
+}
+
+.article__img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.article__video {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+	margin: 30px auto;
+}
+
+.article__video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.article__form {
+	margin-top: 15px;
+}
+
+.article__heading-tertiary {
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 20px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #CDCDCD;
+}
+
+.article__form-wrapper {
+	display: flex;
+	min-height: 150px;
+	margin: 15px 0;
+}
+
+.article__form-wrapper * {
+	box-sizing: border-box;
+}
+
+.article__form-half-1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
+	flex: 0 1 40%;
+	margin-right: 15px;
+}
+
+.article__form-half-2 {
+	flex: 1;
+}
+
+.article__form-half-2 textarea {
+	width: 100%;
+    height: 157px;
+}
+
+.article__form-submit {
+	-webkit-appearance: none;
+	appearance: none;
+	border: none;
+	font: inherit;
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	background: #18B0D5;
+	padding: 15px 65px;
+	margin-top: 15px;
+	align-self: flex-end;
+}
+
+.article__form-name,
+.article__form-email,
+.article__form-half-2 textarea {
+	appearance: none;
+	-webkit-appearance: none;
+	padding: 10px 0 10px 40px;
+	background: #FFFFFF;
+	border: 1px solid #CFCFCF;
+	width: 100%;
+}
+
+.form-input-wrapper,
+.article__form-half-2 {
+	position: relative;
+	display: flex;
+    flex-direction: column;
+}
+
+.form-input-wrapper:first-child {
+	margin-bottom: 15px;
+}
+
+.article__form-name,
+.article__form-email {
+	height: 50px;
+}
+
+.form-input-wrapper svg {
+	position: absolute;
+    top: 50%;
+	transform: translateY(-46%);
+    left: 15px;
+    z-index: 1;
+}
+
+.article__form-half-2 svg {
+	position: absolute;
+    top: 13px;
+	left: 15px;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+.article__form-wrapper .article__form-checkbox input[type="checkbox"] {
+	left: 0;
+}
+
+.article__form-checkbox-group input[type="checkbox"] + label {
+    margin-left: auto;
+    background: none;
+    padding-left: 30px;
+}
+
+.article__form-checkbox-group input[type="checkbox"]:checked + label {
+    margin-left: 0;
+    background: none;
+    height: initial;
+    display: initial;
+    padding-top: 0;
+}
+
+.article__form-checkbox-group {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.article__form-checkbox-input {
+	display: none;
+}
+
+.article__form-checkbox-label {
+	cursor: pointer;
+	position: relative;
+	padding-left: 30px;
+	line-height: 1.5;
+}
+
+.article__form-checkbox-button {
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: -1px;
+	border: 3px solid #CFCFCF;
+}
+
+.article__form-checkbox-button::after {
+	content: "";
+	display: block;
+	height: 6px;
+	width: 6px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: opacity .1s;
+	background-color: #000;
+}
+
+.article__form-checkbox-input:checked ~ .article__form-checkbox-label .article__form-checkbox-button::after {
+	opacity: 1;
+}
+
+
+@media only screen and (max-width: 768px) {
+	section.article {
+		padding: 0 10px;
+	}
+
+	.article__form-half-2 textarea {
+		height: 100%;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.article__lead {
+		flex-direction: column;
+	}
+
+	.article__lead-img-box {
+		order: 1;
+		max-width: 100%;
+		margin: 20px 0 0;
+	}
+
+	.article__lead-img-box .aricle__lead-img {
+		width: 100%;
+	}
+
+
+	.article__form {
+		padding: 15px;
+	}
+
+	.article__form-wrapper {
+		flex-direction: column;
+	}	
+
+	.article__form-half-1 {
+		margin: 0;
+	}
+
+	.article__form-half-2 textarea {
+		min-height: 200px;
+		margin-top: 15px;
+	}
+
+	.article__form-half-2 svg {
+		top: 28px;
+	}
+}
+
+
+.article__read-more {
+	margin: 30px 0;
+}
+
+.article__read-more-wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.article__read-more-wrapper h2 {
+	border: none;
+}
+
+.card {
+    margin-top: 20px;
+    min-width: 200px;
+    max-width: 320px;
+    flex: 0 1 32.5%;
+    min-height: 370px;
+}
+
+.card--read-more {
+	background: #F1F1F1;
+}
+
+.card--read-more .card__content,
+.card--read-more .card__footer {
+	padding: 0 10px;
+}
+
+
+.card__img {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-bottom: 62.5%;
+}
+
+.card__heading {
+	padding: 15px 0;
+}
+
+.card__heading a {
+	text-decoration: none;
+	color: #000;
+}
+
+.card__lead {
+	font-size: 14px;
+	line-height: 1.2;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #CDCDCD;
+}
+
+.card__hashtags {
+	margin: 15px 0;
+	display: flex;
+}
+
+.card__hashtags a {
+	font-size: 14px;
+	color: #616161;
+	text-decoration: none;
+}
+
+.card__hashtags a:not(:last-child) {
+	margin-right: 10px;
+}
+
+.card__footer {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.card .read-more {
+	font-size: 16px;
+	color: #085ACC;
+	text-decoration: none;
+	display: flex;
+}
+
+.card .read-more span {
+	margin-left: 10px;
+	margin-top: 2px;
+}
+
+.card__views {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	margin: 0 20px 0 auto;
+}
+
+.card__comments {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	margin-right: 20px;
+}
+
+.card__views svg {
+	margin-right: 5px;
+}
+
+.card__comments svg {
+	margin-right: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+	.articles__nav {
+		flex-wrap: wrap;
+	}
+
+	.articles__nav a {
+		padding: 5px 10px;
+		white-space: nowrap;
+		margin: 5px 0;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.articles__nav {
+		justify-content: space-around;
+	}
+
+	.card {
+		flex: 0 1 49%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.articles {
+		padding: 0 10px;
+	}
+
+	.card {
+		flex: 0 1 49%;
+	}
+}
+
+@media only screen and (max-width: 435px) {
+	.card {
+		flex: 0 1 100%;
+	}
+}
+
+.btn-to-top {
+	height: 50px;
+	width: 50px;
+	background: #65A5FF;
+	border-radius: 50%;
+}
+
+.btn-to-top span {
+	color: #fff;
+	font-size: 40px;
+	transform: translate(-1px, -11px) rotate(-90deg);
+    display: block;
+}

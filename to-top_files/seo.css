@@ -1,0 +1,93 @@
+div#wrap div.text {
+	margin-bottom: 20px;
+}
+div#wrap div.text p {
+	margin-top: 8px;
+	margin-bottom: 8px;
+    color: #282828;
+    font-size: 16px;
+    font-family1: 'Segoe UI';
+    font-family: 'PT Sans', sans-serif;
+    line-height: 20px;
+    text-align: left;
+
+}
+div#wrap div.text p.h2, div#wrap div.text h2 {
+	font-weight: bold;
+	margin-top: 13px;
+	margin-bottom: 13px;
+    color: #282828;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+div#wrap div.text ul, div#wrap div.text ol {
+	list-style: none;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #282828;
+    font-family1: 'Segoe UI';
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;   
+}
+div#wrap div.text ul li, div#wrap div.text ol li {
+	margin-left: 50px;
+	text-indent: 0px;
+
+	/*padding-left: 50px;*/
+}
+
+div#wrap div.text ul li:before, div#wrap div.text ol li:before {
+   color: #074a88; /* Цвет маркера */
+    content: "•";
+    padding-right: 6px;
+    font-size: 20px; 
+}   
+
+div#wrap div.text .ul_gl li:before {
+    content: "";
+} 
+
+
+.spec_pred .spec_pred_h1 {
+    color: #3e3e3e;
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0 20px 0;
+    font-weight: bold;
+}
+
+.soc_opros .soc_opros_h1 {
+    font-family: Tahoma;
+    color: #3e3e3e;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: left;
+    text-indent: 20px;
+    text-indent: 13px;
+    margin-top: 21px;
+}
+
+#wrap #center h1 {
+	font-size: 26px !important;
+	font-weight: 600 !important;
+}
+
+.seo-text-bottom {
+    margin-top: 20px;
+}
+#wrap #center .text {
+    text-align: justify;
+    padding-left: 15px;
+    font1: 13px/18px Arial,Helvetica,sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 18px;
+}
+#wrap #center .text table tr td{
+	border: 1px solid #ccc;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#wrap #center .text table tr:hover {
+    background: #e6e6e6;
+}

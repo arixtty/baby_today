@@ -1,0 +1,61 @@
+.baner_right {
+			background-color: white !important;
+		}
+		.baner_right .baner-header {
+			font-weight: bold;
+			text-align: center;
+			font-size: 21px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		.baner_right .article-preview {
+			height: 75px;
+		}
+		.baner_right .article-preview a {
+			color: black;
+		}
+		.baner_right .article-preview .preview-image {
+			display: block;
+			width: 50%;
+			height: 100%;
+			float: left;
+		}
+		.baner_right .article-preview .preview-image img {
+			height: 50px;
+			width: 80px;
+			margin: 5px;
+		}
+		.baner_right .article-preview .preview-text {
+			font-size: 12px;
+			display: block;
+			float: right;
+			width: 50%;
+			height: 100%;
+		}
+		.banner_date_of_birth{
+			display: block;
+			width: 186px;
+			height: 119px;
+			background-image: url(/bitrix/templates/babytoday/img/red-calendar.jpg);
+			background-position: center 8px;
+			background-repeat: no-repeat;
+			background-color: #c3001e;
+			color: #fff;
+			margin-bottom: 20px;
+			text-decoration: none;
+			box-sizing: border-box;
+			padding: 77px 10px 10px 10px;
+			text-transform: uppercase;
+			line-height: 16.21px;
+			font-weight: bold;
+			text-align: center;
+		}
+		.banner_calc_math, .banner_calc_ves{
+			box-sizing: border-box;
+			display: block;
+			margin-bottom: 20px;
+		}
+		.banner_calc_math, .banner_calc_ves img {
+			width: 186px;
+			height: 84px;
+		}
